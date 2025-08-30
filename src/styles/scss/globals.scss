@@ -1,3 +1,5 @@
+@use './variables' as *;
+
 /* :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -35,21 +37,130 @@ body {
 body {
     display: flex;
     flex-direction: column;
+    line-height: 1.5;
 
     /*   color: var(--foreground);
   background: var(--background); */
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--font-raleway), Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 main {
     flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.container {
+    max-width: $container-max-width;
+    margin: auto;
+    padding: 2rem;
+    @media screen and (min-width: $container-max-width) {
+        padding: 0;
+      
+    }
 }
 
 a {
     color: inherit;
     text-decoration: none;
+    font: inherit;
+    cursor: pointer;
 }
 
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
 
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+/*@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}*/
+/* Enable hover only on non-touch devices */
+/* @media (hover: hover) and (pointer: fine) {
+  a.primary:hover {
+    background: var(--button-primary-hover);
+    border-color: transparent;
+  }
+
+  a.secondary:hover {
+    background: var(--button-secondary-hover);
+    border-color: transparent;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+} */
+
+/*@media (prefers-color-scheme: dark) {
+  .logo {
+    filter: invert();
+  }
+}*/
+
+h1,
+h2 {
+    font-family: var(--font-playfair);
+}
+
+p {
+    font-family: var(--font-raleway);
+}
