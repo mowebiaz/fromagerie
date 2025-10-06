@@ -1,0 +1,45 @@
+@use './variables' as *;
+
+@mixin xs {
+    @media (min-width: $breakpoint-xs) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (min-width: $breakpoint-sm) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (min-width: $breakpoint-md) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (min-width: $breakpoint-lg) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (min-width: $breakpoint-xl) {
+        @content;
+    }
+}
+
+@mixin btn {
+    display: inline-flex;
+    align-items: center;
+/*     gap: var(--spacing-xs);
+    padding: var(--spacing-sm) var(--spacing-lg); */
+    padding: 1rem 2rem;
+    font-weight: 500;
+    border: 2px solid;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    text-align: center;
+}

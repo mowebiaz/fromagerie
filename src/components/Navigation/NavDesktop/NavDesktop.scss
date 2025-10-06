@@ -1,0 +1,39 @@
+@use '@/src/styles/scss/mixins' as *;
+@use '@/src/styles/scss/variables' as *;
+
+.nav-desktop {
+    display: none;
+
+    @include md {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    &__item {
+        position: relative;
+        text-decoration: none;
+        color: $foreground;
+        font-weight: 500;
+        transition: color 0.2s ease-in-out;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: $primary;
+            transition: width 0.3s ease-in;
+        }
+
+        &:hover,
+        &.active {
+            color: $primary;
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}

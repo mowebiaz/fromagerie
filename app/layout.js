@@ -1,6 +1,6 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import { Footer } from "@/src/components/Footer/Footer";
 import {playfair, raleway } from "@/src/styles/fonts"
+import { Navigation } from "@/src/components/Navigation/Navigation";
 import '@/src/styles/scss/globals.scss';
 
 
@@ -14,6 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className={`${playfair.variable} ${raleway.variable}`}>
+        <Navigation />
         {children}
         <Footer />
       </body>

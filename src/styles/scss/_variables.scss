@@ -1,8 +1,19 @@
-$primary-color: #5D4037;
+//$primary-color: #5D4037;
 
 /*5D4037*/
 
-$font-color-light: #ffffff;
-$font-color-dark: #212121;
+$background: hsla(37, 80%, 98%, 1);
+$foreground: hsla(0, 0%, 18%, 1);
+$primary: hsla(25, 76%, 31%, 1);
+$secondary: hsla(46, 65%, 52%, 1);
+$accent: hsla(170, 22%, 27%, 1);
+$cream: hsla(48, 77%, 91%, 1);
 
+
+
+$breakpoint-xs: 375px;
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
 $container-max-width: 1200px;

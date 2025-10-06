@@ -1,0 +1,45 @@
+@use '@/src/styles/scss/mixins' as *;
+@use '@/src/styles/scss/variables' as *;
+
+.nav-mobile-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: $cream;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    padding: 2rem;
+}
+
+.hamburger-react {
+    @include md {
+        display: none;
+    }
+}
+
+.nav-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    @include md {
+        display: none;
+    }
+
+    &__item {
+        color: $foreground;
+        font-weight: 500;
+        font-size: 1.1rem;
+        padding: var(--spacing-sm) 0;
+        border-bottom: 1px solid transparent;
+        transition: all 0.2s ease-in-out;
+        width: fit-content;
+
+        &:hover,
+        &.active {
+            color: $primary;
+            border-bottom-color: $primary;
+        }
+    }
+}
