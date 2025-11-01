@@ -36,15 +36,15 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 56px; // hauteur du header
+    margin-top: 65px; // hauteur du header
+    margin-bottom: 2rem;
 }
 
 .container {
     max-width: $container-max-width;
-    margin: auto;
-    padding: 2rem;
+    margin: 0 1.5rem;
     @media screen and (min-width: $container-max-width) {
-        padding: 0;
+        padding: 1.5rem;
     }
 }
 

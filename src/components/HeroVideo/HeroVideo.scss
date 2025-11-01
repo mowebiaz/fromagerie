@@ -75,10 +75,10 @@
 
         .btn--primary {
             @include btn;
-            background-color: $primary;
+            padding: 1rem 2rem;
             color: $cream;
-            border-color: $primary;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            background-color: $primary;
+            border: 2px solid $primary;
             transition: all 0.2s ease-in-out;
 
             &:hover {
@@ -93,9 +93,10 @@
 
         .btn--secondary {
             @include btn;
-            background-color: $secondary;
+            padding: 1rem 2rem;
             color: $cream;
-            border-color: $secondary;
+            background-color: $secondary;
+            border: 2px solid $secondary;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             transition: all 0.2s ease-in-out;
 

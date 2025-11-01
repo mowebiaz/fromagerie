@@ -3,8 +3,8 @@
 
 .footer {
     flex-shrink: 0;
-    background-color: $primary-color;
-    color: $font-color-light;
+    background-color: $primary;
+    color: $background;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,7 +28,7 @@
         align-items: center;
         gap: 1rem;
         font-size: 14px; /*à revoir */
-        color: color.scale($font-color-light, $alpha: -30%);
+        color: color.scale($background, $alpha: -30%);
 
         .footer__copyright {
             text-align: center;
