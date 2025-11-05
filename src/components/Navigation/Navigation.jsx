@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { NavDesktop } from './NavDesktop/NavDesktop'
 import { NavMobile } from './NavMobile/NavMobile'
 import { motion, useScroll, useMotionValueEvent } from 'motion/react'
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import './Navigation.scss'
 
 export const navLinks = [
@@ -20,7 +20,9 @@ export const Navigation = () => {
   const { scrollY } = useScroll()
   const [isScrolled, setIsScrolled] = useState(false)
 
-  useMotionValueEvent(scrollY, 'change', (y) => setIsScrolled(y > 4))
+  useMotionValueEvent(scrollY, 'change', (latest) => {
+    setIsScrolled(latest > 0)
+  })
 
   return (
     <motion.header
@@ -34,7 +36,7 @@ export const Navigation = () => {
           href="/"
           className="logo"
         >
-          La Belle Fromagerie
+          Fromagerie des Cimes
         </Link>
         <NavDesktop />
         <NavMobile />

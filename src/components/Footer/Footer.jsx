@@ -32,7 +32,7 @@ export function Footer() {
       </div>
       <div className="footer__bottom">
         <div className='footer__copyright'>
-        <p>© 2025 La Petite Fromagerie. Tous droits réservés.</p>
+        <p>© 2025 Fromagerie des Cimes. Tous droits réservés.</p>
         <p>Site réalisé par MorganeWeb</p>
         </div>
         <div className="footer__links">

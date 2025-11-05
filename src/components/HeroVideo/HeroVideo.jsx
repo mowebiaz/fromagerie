@@ -30,9 +30,9 @@ export const HeroVideo = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2}}
         >
-          <h1>La Belle Fromagerie</h1>
+          <h1>Fromagerie des Cimes</h1>
           <h2>
-            Tradition fromagère depuis 1952 • Fromages artisanaux d'exception
+            Fromages et spécialités savoyardes à Avoriaz
           </h2>
           <div className="cta">
             <Link

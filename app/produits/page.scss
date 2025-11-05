@@ -5,7 +5,7 @@
     @media screen and (min-width: 453px) {
         scroll-margin-top: calc(64px + 75px); //header + subnav
     }
-    @include md {
+    @include lg {
         scroll-margin-top: calc(56px + 75px); //header + subnav
     }
 }
