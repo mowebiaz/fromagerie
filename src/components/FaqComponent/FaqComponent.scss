@@ -1,0 +1,56 @@
+@use '@/src/styles/scss/variables' as *;
+
+.react-aria-Disclosure {
+  width: 100%;
+  .react-aria-Button[slot=trigger] {
+/*     background: none;
+    border: none;
+    box-shadow: none;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    //align-items: first baseline;
+    gap: 8px;
+    padding: 8px 0; */
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border: 1px solid $primary;
+    background: none;
+    gap: 8px;
+    &:last-child {
+      text-align: left;
+      font-weight: 400;
+      
+    }
+
+
+    svg {
+      rotate: 0deg;
+      transition: rotate 200ms;
+      fill: $primary;
+      //stroke: currentColor;
+      stroke-width: 3px;
+    }
+  }
+
+
+
+  &[data-expanded] .react-aria-Button[slot=trigger] svg {
+    rotate: 90deg;
+  }
+}
+
+
+
+.react-aria-DisclosurePanel {
+  margin-left: 26px;
+  height: var(--disclosure-panel-height);
+  transition: height 250ms;
+  text-align: left;
+  overflow: clip;
+
+  @media (prefers-reduced-motion: reduce) {
+    transition: none;
+  }
+}

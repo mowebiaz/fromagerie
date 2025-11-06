@@ -1,11 +1,7 @@
 @use '@/src/styles/scss/variables' as *;
 
-main.home {
-    margin-top: 0;
-}
-
 #about {
-    scroll-margin-top: 65px;
+    scroll-margin-top: 57px;
 }
 
 section:nth-child(2n) {

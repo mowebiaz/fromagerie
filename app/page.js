@@ -2,6 +2,19 @@ import { svgToComponent } from '@/src/utils/svgToComponent'
 import logo from '@/public/logo.svg'
 import { HeroVideo } from '@/src/components/HeroVideo/HeroVideo'
 import './page.scss'
+import { FaqComponent } from '@/src/components/FaqComponent/FaqComponent'
+
+
+const faqHome = [
+  {
+    id: '1',
+    title: 'Proposez-vous des plateaux pour le jour même ?',
+    content: 'Oui, selon disponibilité. Pour être sûr(e), commandez la veille ou appelez-nous au 04 00 00 00 00',
+  }, {
+    id: '2',
+title: "Prêtez-vous le capequelon / appareil à raclette ?",
+content: "Oui, sur demande (caution)",
+  }]
 
 export default function HomePage() {
   const Logo = svgToComponent(logo)
@@ -111,6 +124,7 @@ export default function HomePage() {
 
       <section>
         <div className="container">
+          <FaqComponent className={'faq'} items={faqHome}/>
           <p>
             FAQ (extraits) Proposez-vous des plateaux le jour même ? Oui, selon
             disponibilité. Pour être sûr(e), commandez la veille ou appelez-nous
