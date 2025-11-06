@@ -1,13 +1,16 @@
 @use '@/src/styles/scss/variables' as *;
+@use '@/src/styles/scss/mixins' as *;
 
 header {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 999;
+    height: 57px;
     width: 100%;
+    display: flex;
+    align-items: center;
     background-color: $cream; // avec une opacité à 0.95
     border-bottom: 1px solid rgba(212, 175, 55, 0.1); // mettre foreground avec opacité 0.1
-
     &.scrolled {
         /*background-color: $cream;// avec une opacité à 0.98*/
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); // revoir
@@ -16,11 +19,16 @@ header {
 
 nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1.5rem;
+    width: 100%;
     max-width: $container-max-width;
-    margin: 0 auto;
+    justify-content:space-between;
+    position: relative;
+    padding: 0 0.5rem;
+    margin: 0 auto;  
+     @include lg {
+        padding: 0 2rem;
+    } 
 
     ul {
         list-style-type: none;

@@ -9,6 +9,9 @@
     background-color: $cream;
     border-bottom: 1px solid rgba(212, 175, 55, 0.2);
     padding: 2rem;
+        @include lg {
+        display: none;
+    }
 }
 
 .hamburger-react {

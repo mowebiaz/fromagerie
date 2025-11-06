@@ -2,22 +2,20 @@
 @use '@/src/styles/scss/mixins' as *;
 
 nav.subnav {
-    position: sticky;
-    top:0;
-    width: 100vw;
-    max-width: 100vw;
+    position: fixed;
+    top: 57px;
+    width: 100%;
+    max-width: 100%;
+    //max-width: 100vw;
     margin: 0;
+    padding: 0.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 900;
     background: $background;
     border-bottom: 1px solid #e9e9e9;
-    top: 64px;
 
-    @include lg {
-        top: 56px;
-    }
 }
 
 .subnav {
@@ -26,11 +24,13 @@ nav.subnav {
         flex-wrap: wrap;
         justify-content: center;
         gap: 0.5rem;
-        padding: 0.5rem 16px;
         margin: 0;
         list-style: none;
         overflow-x: auto;
         -webkit-overflow-scrolling: touch;
+        @include sm {
+            padding: 0.5rem;
+        }
     }
 
     &__link {

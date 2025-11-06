@@ -3,8 +3,8 @@
 @use 'sass:color';
 
 .hero {
-    /*position: relative;*/
-    height: 100vh;
+    height: calc(100vh - 57px);
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,9 +58,8 @@
     }
 
     h2 {
-        font-size: clamp(1rem, 2.5vw, 1.5rem);
         opacity: 0.9;
-        font-weight: 300;
+        font-weight: 500;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         max-width: 600px;
         margin: 0 auto 1rem;
@@ -75,7 +74,8 @@
 
         .btn--primary {
             @include btn;
-            padding: 1rem 2rem;
+            //padding: 1rem 2rem;
+            padding: 0.5rem 1rem;
             color: $cream;
             background-color: $primary;
             border: 2px solid $primary;
@@ -93,7 +93,8 @@
 
         .btn--secondary {
             @include btn;
-            padding: 1rem 2rem;
+            //padding: 1rem 2rem;
+            padding: 0.5rem 1rem;
             color: $cream;
             background-color: $secondary;
             border: 2px solid $secondary;
