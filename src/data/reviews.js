@@ -1,0 +1,51 @@
+export const reviews = [
+  {
+    id: '1',
+    author_name: 'Claire M.',
+    relative_time_description: '15 décembre 2023',
+    rating: '5',
+    text: 'Fromages d’une qualité exceptionnelle et service chaleureux. La Fromagerie des Cimes est un incontournable à Avoriaz !',
+  },
+  {
+    id: '2',
+    author_name: 'Julien D.',
+    relative_time_description: '8 janvier 2024',
+    rating: '5',
+    text: 'J’ai commandé une raclette et un fondue au Fromagerie des Cimes et je suis vraiment impressionnée ! La qualité des produits est excellente, et le service client est au top.',
+  },
+  {
+    id: '3',
+    author_name: 'Sophie L.',
+    relative_time_description: '14 février 2024',
+    rating: '4',
+    text: 'La sélection de fromages est incroyable, et les conseils du personnel m’ont vraiment aidé à choisir le plateau parfait pour ma soirée. Je recommande vivement !',
+  },
+  {
+    id: '4',
+    author_name: 'Marc T.',
+    relative_time_description: '31 décembre 2025',
+    rating: '5',
+    text: 'Un vrai délice ! Les fromages sont savoureux et authentiques. La Fromagerie des Cimes est devenue ma destination préférée pour tout ce qui concerne le fromage à Avoriaz.',
+  },
+  {
+    id: '5',
+    author_name: 'Emma R.',
+    relative_time_description: '20 janvier 2025',
+    rating: '5',
+    text: 'Excellente expérience du début à la fin. La qualité des produits et le service client sont irréprochables. Je reviendrai certainement ! ',
+  },
+  {
+    id: '6',
+    author_name: 'Antoine S.',
+    relative_time_description: '31 janvier 2025',
+    rating: '5',
+    text: 'La Fromagerie des Cimes est un véritable joyau à Avoriaz. Leurs fromages sont d’une qualité exceptionnelle, et le personnel est toujours accueillant et serviable.',
+  },
+  {
+    id: '7',
+    author_name: 'Lucas P.',
+    relative_time_description: '20 mars 2025',
+    rating: '5',
+    text: 'La Fromagerie des Cimes offre une expérience fromagère inégalée à Avoriaz. Leurs produits sont d’une qualité exceptionnelle, et le personnel est toujours prêt à partager ses connaissances et à offrir des conseils personnalisés. ',
+  },
+]

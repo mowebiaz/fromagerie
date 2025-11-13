@@ -1,0 +1,11 @@
+.review {
+    list-style: none;
+    display: grid;
+    gap: 1.5rem;
+    padding: 0;
+    margin: 2rem 0;
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}

@@ -8,7 +8,9 @@ import { SpecialtySection } from '@/src/components/SpecialtySection/SpecialtySec
 import { specialties } from '@/src/data/specialties'
 import { FeaturesSection } from '@/src/components/FeaturesSection/FeaturesSection'
 import { features } from '@/src/data/features'
+import { reviews } from '@/src/data/reviews'
 import './page.scss'
+import { ReviewSection } from '@/src/components/ReviewSection/ReviewSection'
 
 const faqHome = [
   {
@@ -121,47 +123,7 @@ export default function HomePage() {
 
       <FeaturesSection items={features} />
 
-      <section id="review">
-        <div className="container">
-          <h2>Avis clients: ce qu&apos;ils disent de nous</h2>
-          <p>3–5 avis courts authentiques.</p>
-          <p>
-            « Fromages d’une qualité exceptionnelle et service chaleureux. La
-            Fromagerie des Cimes est un incontournable à Avoriaz ! » – Claire M.
-          </p>
-          <p>
-            « J’ai commandé une raclette et un fondue au Fromagerie des Cimes et
-            je suis vraiment impressionnée ! La qualité des produits est
-            excellente, et le service client est au top. » – Julien D.
-          </p>
-          <p>
-            « La sélection de fromages est incroyable, et les conseils du
-            personnel m’ont vraiment aidé à choisir le plateau parfait pour ma
-            soirée. Je recommande vivement ! » – Sophie L.
-          </p>
-          <p>
-            « Un vrai délice ! Les fromages sont savoureux et authentiques. La
-            Fromagerie des Cimes est devenue ma destination préférée pour tout
-            ce qui concerne le fromage à Avoriaz. » – Marc T.
-          </p>
-          <p>
-            « Excellente expérience du début à la fin. La qualité des produits
-            et le service client sont irréprochables. Je reviendrai certainement
-            ! » – Emma R.
-          </p>
-          <p>
-            « La Fromagerie des Cimes est un véritable joyau à Avoriaz. Leurs
-            fromages sont d’une qualité exceptionnelle, et le personnel est
-            toujours accueillant et serviable. » – Antoine S.
-          </p>
-          <p>
-            « La Fromagerie des Cimes offre une expérience fromagère inégalée à
-            Avoriaz. Leurs produits sont d’une qualité exceptionnelle, et le
-            personnel est toujours prêt à partager ses connaissances et à offrir
-            des conseils personnalisés. » – Lucas P.
-          </p>
-        </div>
-      </section>
+      <ReviewSection items={reviews} />
 
       <section>
         <div className="container">
