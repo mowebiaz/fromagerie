@@ -104,6 +104,16 @@ h2 {
     font-size: clamp(1.3rem, 1.127rem + 0.739vw, 1.6rem);
     //color: hsla(0, 0%, 20%, 1);
     //margin-top: 1rem;
+    width: max-content;
+    margin-bottom: clamp(1.3rem, 1.127rem + 0.739vw, 1.6rem);
+    &::after {
+        content: '';
+        display: block;
+        width: 75%;
+        height: 3px;
+        margin: 0.3rem auto;
+        background-color: $primary;
+    }
 }
 
 h3 {

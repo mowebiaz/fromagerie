@@ -1,11 +1,13 @@
 @use '@/src/styles/scss/mixins' as *;
 
+main.produits {
+    margin-top: calc(57px + 5rem);
+}
+
 #fromages, #charcuterie, #epicerie {
-    scroll-margin-top: calc(64px + 125px); //header + subnav
-    @media screen and (min-width: 453px) {
-        scroll-margin-top: calc(64px + 75px); //header + subnav
-    }
+    scroll-margin-top: calc(57px + 115px); //header + subnav
+
     @include lg {
-        scroll-margin-top: calc(56px + 75px); //header + subnav
+        scroll-margin-top: calc(57px + 75px); //header + subnav
     }
 }

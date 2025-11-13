@@ -10,9 +10,10 @@
         overflow: hidden;
         border: 1px solid black;
         grid-template-rows: auto 1fr;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border: 1px solid $border;
         //background: var(--card);
         //border: 1px solid var(--border);
-        //border-radius: 0.75rem;
         //transition: border-color 0.16s ease, transform 0.16s ease, box-shadow 0.16s ease;
         &--wide {
             @include sm {
@@ -43,6 +44,7 @@
     &__content {
         min-block-size: clamp(90px, 10vw, 140px);
         padding: 0.5rem;
+        background-color: white;
         p {
             line-height: 1;
         }

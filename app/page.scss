@@ -1,9 +1,79 @@
 @use '@/src/styles/scss/variables' as *;
+@use '@/src/styles/scss/mixins' as *;
+@use 'sass:color';
 
 #about {
     scroll-margin-top: 57px;
 }
 
-section:nth-child(2n) {
+#histoire .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(1rem, 2vw, 3rem);
+    align-items: start;
+
+    @include md {
+        grid-template-columns: 1.3fr 0.7fr;
+    }
+}
+
+.histoire__image {
+    position: relative;
+    min-height: clamp(13.75rem, 11.989rem + 7.51vw, 18.75rem);
+
+    img {
+        object-fit: contain;
+    }
+}
+
+/* section:nth-child(2n) {
     background-color: $cream;
+} */
+
+#boutique {
+    position: relative;
+    a {
+        /*         position: absolute;
+        margin-top: clamp(0.5rem, 1vw, 1rem);;
+        left: 50%;
+        transform: translateX(-50%); */
+        @include btn;
+        padding: 0.5rem 1rem;
+        color: $cream;
+        background-color: $primary;
+        border: 2px solid $primary;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            background-color: color.scale($primary, $alpha: -55%);
+            color: white;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+            transform: translateY(-2px);
+        }
+    }
+}
+
+.boutique__images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: clamp(0.5rem, 1vw, 1rem);
+    padding: 0.5rem 0;
+
+    .card {
+        position: relative;
+        aspect-ratio: 1/1;
+        border-radius: 10px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+
+        img {
+            object-fit: cover;
+        }
+    }
+    .card-link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
