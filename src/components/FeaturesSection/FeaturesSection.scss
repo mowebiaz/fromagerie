@@ -1,0 +1,12 @@
+@use '@/src/styles/scss/variables' as *;
+
+#features {
+    background-color: $cream;
+}
+
+.feature__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    justify-items: center;
+    gap: 1.5rem;
+}

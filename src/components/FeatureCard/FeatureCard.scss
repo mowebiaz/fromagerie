@@ -1,0 +1,29 @@
+@use '@/src/styles/scss/variables' as *;
+
+.feature {
+    &__card {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border: 1px solid $border;
+        max-width: 350px;
+    }
+    &__icon {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 80px;
+        height: 80px;
+        background: linear-gradient(135deg, $primary, $secondary);
+        border-radius: 50%;
+        margin-bottom: 2rem;
+        color: white;
+    }
+    &__content {
+        h3 {
+            margin-bottom: 1rem;
+        }
+    }
+}

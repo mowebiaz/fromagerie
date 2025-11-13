@@ -1,23 +1,31 @@
 import { svgToComponent } from '@/src/utils/svgToComponent'
 import logo from '@/public/logo.svg'
+import Image from 'next/image'
+import Link from 'next/link'
 import { HeroVideo } from '@/src/components/HeroVideo/HeroVideo'
-import './page.scss'
 import { FaqComponent } from '@/src/components/FaqComponent/FaqComponent'
-
+import { SpecialtySection } from '@/src/components/SpecialtySection/SpecialtySection'
+import { specialties } from '@/src/data/specialties'
+import { FeaturesSection } from '@/src/components/FeaturesSection/FeaturesSection'
+import { features } from '@/src/data/features'
+import './page.scss'
 
 const faqHome = [
   {
     id: '1',
     title: 'Proposez-vous des plateaux pour le jour même ?',
-    content: 'Oui, selon disponibilité. Pour être sûr(e), commandez la veille ou appelez-nous au 04 00 00 00 00',
-  }, {
+    content:
+      'Oui, selon disponibilité. Pour être sûr(e), commandez la veille ou appelez-nous au 04 00 00 00 00',
+  },
+  {
     id: '2',
-title: "Prêtez-vous le capequelon / appareil à raclette ?",
-content: "Oui, sur demande (caution)",
-  }]
+    title: 'Prêtez-vous le capequelon / appareil à raclette ?',
+    content: 'Oui, sur demande (caution)',
+  },
+]
 
 export default function HomePage() {
-  const Logo = svgToComponent(logo)
+  //const Logo = svgToComponent(logo)
 
   return (
     <main className="home">
@@ -30,57 +38,90 @@ export default function HomePage() {
             pour vous le meilleur des alpages savoyards : Abondance, Reblochon,
             Tomme, Beaufort… Raclettes et fondues prêtes à partager, plateaux
             raffinés, charcuteries de montagne et cave locale. Passez en
-            boutique ou commandez vos plateaux pour ce soir.
+            boutique ou commandez vos plateaux pour ce soir. Bienvenue à La
+            Petite Fromgerie, votre fromagerie artisanale de quartier. Depuis
+            plus de 35 ans, nous sélectionnons avec passion les meilleurs
+            fromages de notre terroir et d&apos;ailleurs. Chaque fromage raconte
+            une histoire, celle de son producteur, de son terroir et de son
+            savoir-faire. Nous sommes fiers de vous les faire découvrir et de
+            partager notre passion avec vous.
           </p>
         </div>
       </section>
 
-      <section>
+      <section id="histoire">
         <div className="container">
-          <h2>Notre histoire</h2>
-          <p>
-            Née de l’amour des fromages de montagne, nous travaillons en direct
-            avec des producteurs et affineurs indépendants. Nous défendons une
-            sélection courte, de saison et de caractère, affinée avec patience
-            pour révéler la richesse de nos terroirs alpins.
-          </p>
+          <div className="histoire__content">
+            <h2>Notre histoire</h2>
+            <p>
+              Née de l’amour des fromages de montagne, nous travaillons en
+              direct avec des producteurs et affineurs indépendants. Nous
+              défendons une sélection courte, de saison et de caractère, affinée
+              avec patience pour révéler la richesse de nos terroirs alpins.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga
+              dicta rerum suscipit cumque voluptatum consequuntur perferendis
+            </p>
+          </div>
+          <div className="histoire__image">
+            <Image
+              src="/images/fromages.webp"
+              alt="fromagerie des cimes: notre histoire"
+              fill
+              quality={100}
+              /*               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 44vw, 40vw"
+              priority */
+            />
+          </div>
         </div>
       </section>
 
-      <section>
+      <SpecialtySection items={specialties} />
+
+      <section id="boutique">
         <div className="container">
           <h2>La boutique</h2>
           <p>
             Un comptoir de fromages de Savoie et d’ailleurs, une belle sélection
             de charcuteries, une crèmerie gourmande, des bocaux, miels, crozets…
-            et une cave pensée pour sublimer vos raclettes et fondues. Dépôt de
-            pain quotidien en hiver. CTA : “Voir nos produits” → /produits
+            et une cave pensée pour sublimer vos raclettes et fondues.
           </p>
+          <p>🥖 🥐 Dépôt de pain quotidien, en saison</p>
+          <div className="boutique__images">
+            <div className="card">
+              <Image
+                src={'/images/1.png'}
+                alt="image1"
+                fill
+                sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, (max-width: 1200px) 33vw, 25vw"
+              />
+            </div>
+            <div className="card">
+              <Image
+                src={'/images/2.png'}
+                alt="image1"
+                fill
+                sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, (max-width: 1200px) 33vw, 25vw"
+              />
+            </div>
+            <div className="card">
+              <Image
+                src={'/images/3.png'}
+                alt="image1"
+                fill
+                sizes="(max-width: 576px) 100vw, (max-width: 1200px) 50vw, 25vw"
+              />
+            </div>
+            {/*             <div className='card-link'>
+              <Link href="/contact">Nous rendre visite</Link>
+            </div> */}
+          </div>
+          <Link href="/contact">Nous rendre visite</Link>
         </div>
       </section>
 
-      <section>
-        <div className="container">
-          <h2>Nos spécialités</h2>
-          <p>
-            Raclettes : nature, fumée, ail des ours, 3 poivres, chèvre… →
-            /raclette Fondues : recettes maison (Beaufort, Abondance, Emmental…)
-            → /fondue Plateaux : apéro, dînatoire, sur-mesure → /plateaux CTA
-            secondaire : “Commander un plateau” → /plateaux#commander
-          </p>
-        </div>
-      </section>
+      <FeaturesSection items={features} />
 
-      <section>
-        <div className="container">
-          <h2>Pourquoi nous choisir ?</h2>
-          Sélection locale & de saison Affinage exigeant Conseils d’accords & de
-          préparation Service plateau sur-mesure (retrait en boutique) Ouvert
-          7/7 en saison
-        </div>
-      </section>
-
-      <section>
+      <section id="review">
         <div className="container">
           <h2>Avis clients: ce qu&apos;ils disent de nous</h2>
           <p>3–5 avis courts authentiques.</p>
@@ -124,7 +165,10 @@ export default function HomePage() {
 
       <section>
         <div className="container">
-          <FaqComponent className={'faq'} items={faqHome}/>
+          <FaqComponent
+            className={'faq'}
+            items={faqHome}
+          />
           <p>
             FAQ (extraits) Proposez-vous des plateaux le jour même ? Oui, selon
             disponibilité. Pour être sûr(e), commandez la veille ou appelez-nous
