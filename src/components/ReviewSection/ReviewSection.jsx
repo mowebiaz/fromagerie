@@ -1,4 +1,11 @@
+'use client'
+
+import { Swiper, SwiperSlide } from 'swiper/react'
 import { ReviewCard } from '../ReviewCard/ReviewCard'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
+import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import './ReviewSection.scss'
 
 export const ReviewSection = ({ items }) => {
@@ -6,14 +13,44 @@ export const ReviewSection = ({ items }) => {
     <section id="reviews">
       <div className="container">
         <h2>Ils parlent de nous</h2>
-        <ul className="review">
+
+        {/*         <ul className="review">
           {items.map((item) => (
             <ReviewCard
               key={item.id}
               review={item}
             />
           ))}
-        </ul>
+        </ul> */}
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          navigation
+          pagination={{ clickable: true }}
+          loop={true}
+          spaceBetween={30}
+          autoplay={{
+            delay: 2000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          }}
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+        >
+          {items.map((item) => (
+            <SwiperSlide key={item.id}>
+              <ReviewCard review={item} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
     </section>
   )

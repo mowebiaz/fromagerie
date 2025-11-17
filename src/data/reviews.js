@@ -46,6 +46,6 @@ export const reviews = [
     author_name: 'Lucas P.',
     relative_time_description: '20 mars 2025',
     rating: '5',
-    text: 'La Fromagerie des Cimes offre une expérience fromagère inégalée à Avoriaz. Leurs produits sont d’une qualité exceptionnelle, et le personnel est toujours prêt à partager ses connaissances et à offrir des conseils personnalisés. ',
+    text: 'La Fromagerie des Cimes offre une expérience fromagère inégalée à Avoriaz. Leurs produits sont d’une qualité exceptionnelle, et le personnel est toujours prêt à offrir des conseils personnalisés. ',
   },
 ]
