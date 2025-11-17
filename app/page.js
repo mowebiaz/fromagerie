@@ -1,30 +1,18 @@
-import { svgToComponent } from '@/src/utils/svgToComponent'
-import logo from '@/public/logo.svg'
 import Image from 'next/image'
 import Link from 'next/link'
-import { HeroVideo } from '@/src/components/HeroVideo/HeroVideo'
+import logo from '@/public/logo.svg'
 import { FaqComponent } from '@/src/components/FaqComponent/FaqComponent'
-import { SpecialtySection } from '@/src/components/SpecialtySection/SpecialtySection'
-import { specialties } from '@/src/data/specialties'
 import { FeaturesSection } from '@/src/components/FeaturesSection/FeaturesSection'
+import { HeroVideo } from '@/src/components/HeroVideo/HeroVideo'
+import { SpecialtySection } from '@/src/components/SpecialtySection/SpecialtySection'
+import { faqHome } from '@/src/data/faq'
 import { features } from '@/src/data/features'
 import { reviews } from '@/src/data/reviews'
-import './page.scss'
+import { specialties } from '@/src/data/specialties'
+import { svgToComponent } from '@/src/utils/svgToComponent'
 import { ReviewSection } from '@/src/components/ReviewSection/ReviewSection'
-
-const faqHome = [
-  {
-    id: '1',
-    title: 'Proposez-vous des plateaux pour le jour même ?',
-    content:
-      'Oui, selon disponibilité. Pour être sûr(e), commandez la veille ou appelez-nous au 04 00 00 00 00',
-  },
-  {
-    id: '2',
-    title: 'Prêtez-vous le capequelon / appareil à raclette ?',
-    content: 'Oui, sur demande (caution)',
-  },
-]
+import './page.scss'
+import { BtnLink } from '@/src/components/BtnLink/BtnLink'
 
 export default function HomePage() {
   //const Logo = svgToComponent(logo)
@@ -117,7 +105,7 @@ export default function HomePage() {
               <Link href="/contact">Nous rendre visite</Link>
             </div> */}
           </div>
-          <Link href="/contact">Nous rendre visite</Link>
+          <BtnLink href="/contact" text="Nous rendre visite" />
         </div>
       </section>
 
