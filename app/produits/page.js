@@ -1,5 +1,5 @@
 import { SubnavAnchors } from '@/src/components/SubnavAnchors/SubnavAnchors'
-import './page.scss'
+import './produits.scss'
 
 export default function ProduitsPage() {
   const items = [
@@ -50,6 +50,10 @@ export default function ProduitsPage() {
               Exemples : Crottin de Chavignol, Sainte-Maure, Valençay.
               <span>Coup de cœur : chèvre à l’ail des ours (printemps).</span>
             </p>
+            <p>
+              CTA : “Voir nos raclettes” → /raclette | “Voir nos fondues” →
+              /fondue | “Commander un plateau” → /plateaux#commander
+            </p>
           </div>
         </section>
 
@@ -77,10 +81,6 @@ export default function ProduitsPage() {
             </p>
           </div>
         </section>
-        <p>
-          CTA : “Voir nos raclettes” → /raclette | “Voir nos fondues” → /fondue
-          | “Commander un plateau” → /plateaux#commander
-        </p>
       </main>
     </>
   )

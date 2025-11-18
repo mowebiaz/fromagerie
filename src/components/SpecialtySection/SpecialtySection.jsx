@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { SpecialtyCard } from '../SpecialtyCard/SpecialtyCard'
+import { BtnLink } from '../BtnLink/BtnLink'
 import './SpecialtySection.scss'
 
 export const SpecialtySection = ({ items }) => {
@@ -19,7 +20,10 @@ export const SpecialtySection = ({ items }) => {
             />
           ))}
         </div>
-        <Link href="/produits">Tous nos produits</Link>
+        <BtnLink
+          href="/produits"
+          text="Tous nos produits"
+        />
       </div>
     </section>
   )

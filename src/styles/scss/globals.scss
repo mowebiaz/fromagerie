@@ -49,8 +49,12 @@ main {
     max-width: $container-max-width;
     margin: 0 auto;
     padding: 1rem;
+    @media screen and (min-width: $breakpoint-sm) {
+        padding: 2rem;
+    }
     @media screen and (min-width: $container-max-width) {
-        padding: 1.5rem;
+        padding: 2rem;
+        
     }
 }
 
@@ -101,17 +105,24 @@ h1 {
 }
 
 h2 {
+        font-family: var(--font-playfair), 'Brush Script MT', 'Comic Sans MS',
+        cursive;
     font-size: clamp(1.3rem, 1.127rem + 0.739vw, 1.6rem);
     //color: hsla(0, 0%, 20%, 1);
     //margin-top: 1rem;
-    width: max-content;
+    //width: max-content;
     margin-bottom: clamp(1.3rem, 1.127rem + 0.739vw, 1.6rem);
+/*     position: relative;
+    width: fit-content; */
     &::after {
         content: '';
+        position: absolute;
         display: block;
-        width: 75%;
+        width: 80px;
         height: 3px;
-        margin: 0.3rem auto;
+        margin: 0.3rem 0;
+/*         left: 50%;
+        transform: translateX(-50%); */
         background-color: $primary;
     }
 }
@@ -142,11 +153,6 @@ sr-only {
   }
 }*/
 
-h1,
-h2 {
-    font-family: var(--font-playfair);
-}
 
-p {
-    font-family: var(--font-raleway);
-}
+
+

@@ -5,7 +5,7 @@ export const specialties = [
     title: 'La raclette',
     content:
       'nature, fumée, ail des ours, 3 poivres, chèvre… et tout l’accompagnement : pommes de terre, charcuteries, cornichons, pain, vins blancs de montagne.',
-    image: { src: '/images/1.png', alt: 'image1' },
+    image: { src: '/images/raclette.webp', alt: 'fromage à raclette fondu coulant dans une assiette' },
     link: { ref: '/raclettes', text: 'Voir nos raclettes' },
   },
   {
@@ -13,7 +13,7 @@ export const specialties = [
     size: 'wide',
     title: 'La fondue',
     content: 'recettes maison (Beaufort, Abondance, Emmental…)',
-    image: { src: '/images/1.png', alt: 'image1' },
+    image: { src: '/images/fondue.webp', alt: 'fondue au fromage accompagnée de charcuterie et de pain' },
     link: { ref: '/fondues', text: 'Voir nos fondues' },
   },
   {

@@ -1,31 +1,110 @@
+import Image from 'next/image'
+import './raclettes.scss'
+
 export default function RaclettesPage() {
   return (
-    <main>
+    <main className="raclettes">
       <h1>La raclette, star de l’hiver</h1>
-      <p>
-        À deux pas de la Suisse, Avoriaz est un terrain de jeu idéal pour une
-        raclette réussie. A la Fromagerie des Cimes, nous proposons plusieurs
-        profils : nature, fumée, ail des ours, 3 poivres, chèvre… et tout
-        l’accompagnement : pommes de terre, charcuteries, cornichons, pain, vins
-        blancs de montagne.
-      </p>
-      <h2>Nos raclettes</h2>
-      <ul>
-        <li>Nature : lait de vache, généreuse et fondante</li>
-        <li>Fumée : notes boisées</li>
-        <li>Ail des ours : parfum végétal printanier</li>
-        <li>3 poivres : relevé, équilibré</li>
-        <li>Chèvre : plus franc et herbacé</li>
-      </ul>
+      <div className="container">
+        <p>
+          À deux pas de la Suisse, Avoriaz est un terrain de jeu idéal pour une
+          raclette réussie. A la Fromagerie des Cimes, nous proposons plusieurs
+          profils : nature, fumée, ail des ours, 3 poivres, chèvre… et tout
+          l’accompagnement : pommes de terre, charcuteries, cornichons, pain,
+          vins blancs de montagne.
+        </p>
+      </div>
+
+      <section id="fromages-raclette">
+        <div className="container">
+          <div>
+            <h2>Nos fromages à raclette</h2>
+
+            <ul>
+              <li>Nature : lait de vache, généreuse et fondante</li>
+              <li>Fumée : notes boisées</li>
+              <li>Ail des ours : parfum végétal printanier</li>
+              <li>3 poivres : relevé, équilibré</li>
+              <li>Chèvre : plus franc et herbacé</li>
+            </ul>
+          </div>
+          <div className="image">
+            <Image
+              src="/images/1.png"
+              alt="fromagerie des cimes: notre histoire"
+              fill
+              quality={100}
+              /*               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 44vw, 40vw"
+              priority */
+            />
+          </div>
+        </div>
+      </section>
       {/* à revoir */}
-      <h2>Nos formules</h2>
-      <p>
-        Chaque raclette est offerte en plusieurs formules, selon vos besoins.
-        Chaque formule est personnalisable selon vos besoins. Par personne :
-        200–250 g de fromage, 200–300 g de pommes de terre, assortiment de
-        charcuteries, cornichons. Sortez le fromage 30 min avant. Prêt
-        d’appareil possible (caution).
-      </p>
+
+      <section id="formules-raclette">
+        <div className="container">
+          <h2>Nos formules</h2>
+          <p>
+            Chaque raclette est offerte en plusieurs formules, selon vos
+            besoins. Chaque formule est personnalisable selon vos besoins. Par
+            personne : 200–250 g de fromage, 200–300 g de pommes de terre,
+            assortiment de charcuteries, cornichons. Sortez le fromage 30 min
+            avant. Prêt d’appareil possible (caution). à modifier: Présentation
+            sur Plateau ou juste découpé en sac, choisissez votre Formule !
+          </p>
+
+          <div className="formules">
+
+          <article>
+            <div className="content">
+              <ul>
+                <li>4 parfums de fromage</li>
+                <li>charcuterie</li>
+              </ul>
+              <p>(250g de fromage, 150g de charcuterie environ pp)</p>
+            </div>
+            <div className="price">13€</div>
+          </article>
+
+          <article>
+            <div className="content">
+              <ul>
+                <li>fromage nature</li>
+                <li>charcuterie</li>
+              </ul>
+              <p>(250g de fromage, 150g de charcuterie environ pp)</p>
+            </div>
+            <div className="price">11€</div>
+          </article>
+
+          <article>
+            <div className="content">
+              <ul>
+                <li>4 parfums de fromage</li>
+                <li>sans charcuterie</li>
+              </ul>
+              <p>(250g de fromage environ pp)</p>
+            </div>
+            <div className="price">8,50€</div>
+          </article>
+
+          <article>
+            <div className="content">
+              <ul>
+                <li>fromage nature</li>
+                <li>sans charcuterie</li>
+              </ul>
+              <p>(250g de fromage environ pp)</p>
+            </div>
+            <div className="price">5,50€</div>
+          </article>
+
+          </div>
+
+
+        </div>
+      </section>
       <h2>Le saviez-vous ?</h2>
       <p>
         La Raclette de Savoie bénéficie d’une IGP depuis 2017. Elle est élaborée
