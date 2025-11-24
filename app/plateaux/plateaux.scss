@@ -1,0 +1,27 @@
+@use '@/src/styles/scss/mixins' as *;
+@use '@/src/styles/scss/variables' as *;
+
+#plateaux {
+  .container {
+              display: grid;
+        grid-template-columns: 1fr;
+        gap: clamp(1rem, 2vw, 3rem);
+        align-items: start;
+
+        @include md {
+            grid-template-columns: 1fr 1fr;
+        }
+            .image {
+        position: relative;
+        min-height: clamp(13.75rem, 11.989rem + 7.51vw, 18.75rem);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+        img {
+            object-fit: cover;
+        }
+    }
+  }
+}
+
