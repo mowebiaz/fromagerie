@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { FormulaCard } from '@/src/components/FormulaCard/FormulaCard'
 import './raclettes.scss'
 
 export default function RaclettesPage() {
@@ -55,63 +56,53 @@ export default function RaclettesPage() {
           </p>
 
           <div className="formules">
-
-          <article>
-            <div className="content">
+            <FormulaCard price="13">
               <ul>
                 <li>4 parfums de fromage</li>
                 <li>charcuterie</li>
               </ul>
               <p>(250g de fromage, 150g de charcuterie environ pp)</p>
-            </div>
-            <div className="price">13€</div>
-          </article>
+            </FormulaCard>
 
-          <article>
-            <div className="content">
+            <FormulaCard price="11">
               <ul>
                 <li>fromage nature</li>
                 <li>charcuterie</li>
               </ul>
               <p>(250g de fromage, 150g de charcuterie environ pp)</p>
-            </div>
-            <div className="price">11€</div>
-          </article>
+            </FormulaCard>
 
-          <article>
-            <div className="content">
+            <FormulaCard price="8,50">
               <ul>
                 <li>4 parfums de fromage</li>
                 <li>sans charcuterie</li>
               </ul>
               <p>(250g de fromage environ pp)</p>
-            </div>
-            <div className="price">8,50€</div>
-          </article>
+            </FormulaCard>
 
-          <article>
-            <div className="content">
+            <FormulaCard price="5,50">
               <ul>
                 <li>fromage nature</li>
                 <li>sans charcuterie</li>
               </ul>
               <p>(250g de fromage environ pp)</p>
-            </div>
-            <div className="price">5,50€</div>
-          </article>
-
+            </FormulaCard>
           </div>
-
-
         </div>
       </section>
-      <h2>Le saviez-vous ?</h2>
-      <p>
-        La Raclette de Savoie bénéficie d’une IGP depuis 2017. Elle est élaborée
-        et affinée sur une aire délimitée en Savoie et Haute-Savoie, avec des
-        laits principalement issus des races Abondance, Montbéliarde et
-        Tarentaise.
-      </p>
+
+      <section>
+        <div className="container">
+          <h2>Le saviez-vous ?</h2>
+          <p>
+            La Raclette de Savoie bénéficie d’une IGP depuis 2017. Elle est
+            élaborée et affinée sur une aire délimitée en Savoie et
+            Haute-Savoie, avec des laits principalement issus des races
+            Abondance, Montbéliarde et Tarentaise.
+          </p>
+        </div>
+      </section>
+
       <p>CTA : “Je commande ma raclette” → /contact ou ancre de commande.</p>
       <p>
         FAQ (extraits) Quelle quantité prévoir ? Comptez 200–250 g de fromage
