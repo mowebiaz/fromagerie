@@ -36,7 +36,7 @@ export default function PlateauxPage() {
               price="15"
               title="Apéro"
             >
-              <p>2-4 pers</p>
+              <p className='info'>2-4 pers</p>
               <p>sélection de 4 fromages, charcuteries fines, fruits secs</p>
             </FormulaCard>
 
@@ -44,7 +44,7 @@ export default function PlateauxPage() {
               price="25"
               title="Convivial"
             >
-              <p>4-6 pers</p>
+              <p className='info'>4-6 pers</p>
               <p>
                 sélection de 5-6 fromages, charcuteries de montagne, condiments
               </p>
@@ -54,7 +54,7 @@ export default function PlateauxPage() {
               price="40"
               title="Gourmand"
             >
-              <p>6-8 pers</p>
+              <p className='info'>6-8 pers</p>
               <p>
                 sélection de 7-8 fromages, grands affinages, charcuteries,
                 confitures
@@ -65,7 +65,7 @@ export default function PlateauxPage() {
               price="60"
               title="Sur mesure"
             >
-              <p>8-12 pers</p>
+              <p className='info'>8-12 pers</p>
               <p>thèmes (Savoie only, chèvres, truffe…), allergies, budget</p>
             </FormulaCard>
           </div>

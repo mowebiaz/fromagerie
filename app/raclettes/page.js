@@ -61,7 +61,7 @@ export default function RaclettesPage() {
                 <li>4 parfums de fromage</li>
                 <li>charcuterie</li>
               </ul>
-              <p>(250g de fromage, 150g de charcuterie environ pp)</p>
+              <p className='info'>(250g de fromage, 150g de charcuterie environ pp)</p>
             </FormulaCard>
 
             <FormulaCard price="11">
@@ -69,7 +69,7 @@ export default function RaclettesPage() {
                 <li>fromage nature</li>
                 <li>charcuterie</li>
               </ul>
-              <p>(250g de fromage, 150g de charcuterie environ pp)</p>
+              < p className='info'>(250g de fromage, 150g de charcuterie environ pp)</p>
             </FormulaCard>
 
             <FormulaCard price="8,50">
@@ -77,7 +77,7 @@ export default function RaclettesPage() {
                 <li>4 parfums de fromage</li>
                 <li>sans charcuterie</li>
               </ul>
-              <p>(250g de fromage environ pp)</p>
+              <p className='info'>(250g de fromage environ pp)</p>
             </FormulaCard>
 
             <FormulaCard price="5,50">
@@ -85,7 +85,7 @@ export default function RaclettesPage() {
                 <li>fromage nature</li>
                 <li>sans charcuterie</li>
               </ul>
-              <p>(250g de fromage environ pp)</p>
+              <p className='info'>(250g de fromage environ pp)</p>
             </FormulaCard>
           </div>
         </div>
