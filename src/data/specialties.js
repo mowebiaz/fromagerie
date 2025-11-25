@@ -29,15 +29,15 @@ export const specialties = [
     size: 'medium',
     title: 'Tomme de Savoie IGP',
     content:
-      'Croûte grise naturelle, pâte tendre et légère, saveurs lactées et légèrement animales selon l’affinage. Polyvalente : en raclette, en salade ou à la coupe avec un verre de blanc de Savoie.',
+      'Goût doux et typé à la fois, avec sa croûte rustique. Un incontournable des plateaux de montagne.',
     image: { src: '/images/1.png', alt: 'image4' },
   },
   {
     id: '5',
     size: 'medium',
-    title: 'Reblochon AOP (Haute-Savoie)',
+    title: 'Reblochon fermier AOP',
     content:
-      'Pâte pressée souple, croûte orangée, notes de noisette et de crème. Le cœur fondant s’ouvre idéalement à température ambiante; star de la tartiflette et sublime sur une planche.',
+      'Crémeux et parfumé, issu de petites fermes de Haute-Savoie. Parfait en tartiflette ou sur un plateau.',
     image: { src: '/images/1.png', alt: 'image4' },
   },
 ]

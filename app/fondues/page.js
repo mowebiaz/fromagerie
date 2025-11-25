@@ -1,4 +1,5 @@
 import { FormulaCard } from "@/src/components/FormulaCard/FormulaCard";
+import './fondues.scss'
 
 export default function FonduesPage() {
   return (

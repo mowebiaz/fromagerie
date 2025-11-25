@@ -7,7 +7,7 @@ export const faqHome = [
   },
   {
     id: '2',
-    title: 'Prêtez-vous le capequelon / appareil à raclette ?',
+    title: 'Prêtez-vous le caquelon / appareil à raclette ?',
     content: 'Oui, sur demande (caution)',
   },
 ]
