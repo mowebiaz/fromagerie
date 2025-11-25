@@ -78,8 +78,8 @@ export default function HomePage() {
           <div className="boutique__images">
             <div className="card">
               <Image
-                src={'/images/1.png'}
-                alt="image1"
+                src={'/images/fromagerie-des-cimes-boutique.webp'}
+                alt="La fromagerie des Cimes: notre boutique au coeur d’Avoriaz"
                 fill
                 sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, (max-width: 1200px) 33vw, 25vw"
               />

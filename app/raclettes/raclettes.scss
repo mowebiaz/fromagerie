@@ -14,10 +14,17 @@
     }
     ul {
         list-style-position: inside;
+        //list-style-type: "🧀";
+        list-style-type: none;
         margin-left: 2rem;
+        margin-top: 2rem;
         li {
             line-height: 1.2;
             margin-bottom: 1rem;
+            &::before {
+                content: '🧀';
+                margin-right: 0.5rem;
+            }
         }
     }
     .image {
@@ -35,5 +42,21 @@
 
 #formules-raclette {
     background-color: $cream;
+}
+
+.igp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    @include sm {
+        flex-direction: row;
+    }
+
+    img {
+        border-radius: 50%;
+        filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.25));
+    }
 }
 

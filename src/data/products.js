@@ -6,8 +6,8 @@ export const products = [
       'Idéals en plateau ou pour la cuisine de montagne, fermes et savoureux, ces fromages sont affinés avec soin. Quelques exemples: Comté, Beaufort, Abondance, Reblochon, Morbier, Gruyère, Emmental, Tomme de Savoie.',
     accent: null,
       images: [
-      { src: '/images/1.png', alt: 'Fromage à pâte pressée 1'},
-      { src: '/images/2.png', alt: 'Fromage à pâte pressée 2' },
+      { src: '/images/pate-pressee-1.webp', alt: 'Fromage à pâte pressée 1'},
+      { src: '/images/pate-pressee-2.webp', alt: 'Fromage à pâte pressée 2' },
       { src: '/images/3.png', alt: 'Fromage à pâte pressée 3'},
     ],
   },
@@ -17,7 +17,7 @@ export const products = [
     description: 'Crémeux et fondants, aux arômes délicats. Exemples : Brie, Camembert, Vacherin, Bleu du Vercors. Astuce accord : pain de campagne, confiture de myrtilles.',
     accent: '❤️ Notre coup de coeur: Brie fourré aux truffes',
     images: [
-      { src: '/images/1.png', alt: 'Fromage à pâte molle 1' },
+      { src: '/images/brie.webp', alt: 'Fromage à pâte molle: brie' },
       { src: '/images/2.png', alt: 'Fromage à pâte molle 2' },
       { src: '/images/3.png', alt: 'Fromage à pâte molle 2' },
     ],

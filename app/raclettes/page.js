@@ -61,7 +61,9 @@ export default function RaclettesPage() {
                 <li>4 parfums de fromage</li>
                 <li>charcuterie</li>
               </ul>
-              <p className='info'>(250g de fromage, 150g de charcuterie environ pp)</p>
+              <p className="info">
+                (250g de fromage, 150g de charcuterie environ pp)
+              </p>
             </FormulaCard>
 
             <FormulaCard price="11">
@@ -69,7 +71,9 @@ export default function RaclettesPage() {
                 <li>fromage nature</li>
                 <li>charcuterie</li>
               </ul>
-              < p className='info'>(250g de fromage, 150g de charcuterie environ pp)</p>
+              <p className="info">
+                (250g de fromage, 150g de charcuterie environ pp)
+              </p>
             </FormulaCard>
 
             <FormulaCard price="8,50">
@@ -77,7 +81,7 @@ export default function RaclettesPage() {
                 <li>4 parfums de fromage</li>
                 <li>sans charcuterie</li>
               </ul>
-              <p className='info'>(250g de fromage environ pp)</p>
+              <p className="info">(250g de fromage environ pp)</p>
             </FormulaCard>
 
             <FormulaCard price="5,50">
@@ -85,7 +89,7 @@ export default function RaclettesPage() {
                 <li>fromage nature</li>
                 <li>sans charcuterie</li>
               </ul>
-              <p className='info'>(250g de fromage environ pp)</p>
+              <p className="info">(250g de fromage environ pp)</p>
             </FormulaCard>
           </div>
         </div>
@@ -94,12 +98,21 @@ export default function RaclettesPage() {
       <section>
         <div className="container">
           <h2>Le saviez-vous ?</h2>
-          <p>
-            La Raclette de Savoie bénéficie d’une IGP depuis 2017. Elle est
-            élaborée et affinée sur une aire délimitée en Savoie et
-            Haute-Savoie, avec des laits principalement issus des races
-            Abondance, Montbéliarde et Tarentaise.
-          </p>
+          <div className="igp">
+            <Image
+              src="/images/vache-abondance.webp"
+              alt="Vache de race Abondance en alpage, utilisée pour la production de Raclette de Savoie IGP"
+              width={203}
+              height={150}
+              quality={100}
+            />
+            <p>
+              La Raclette de Savoie bénéficie d’une IGP depuis 2017. Elle est
+              élaborée et affinée sur une aire délimitée en Savoie et
+              Haute-Savoie, avec des laits principalement issus des races
+              Abondance, Montbéliarde et Tarentaise.
+            </p>
+          </div>
         </div>
       </section>
 
