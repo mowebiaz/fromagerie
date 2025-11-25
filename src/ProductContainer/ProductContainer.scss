@@ -1,0 +1,123 @@
+@use '@/src/styles/scss/mixins' as *;
+@use '@/src/styles/scss/variables' as *;
+
+.product-container {
+    display: grid;
+    --g: 0.5em /* gap space */;
+    /* angling skews the figure column by this angle */
+    --a: 15deg;
+
+    grid-gap: var(--g);
+    /* adapts automatically for the number of items */
+    grid-template-columns: 
+		/* twice the number of img columns*/ repeat(6, 1fr);
+    /* to hide what overflows of the last image */
+    overflow: hidden;
+    /* guess gap on body works too */
+    margin: 2rem 1rem;
+    border-radius: 5px;
+    background: $cream;
+    filter: drop-shadow(2px 2px 5px $foreground);
+
+    &__content {
+        /* text section takes up half the columns */
+        grid-column-end: span 3;
+        /* needed for its pseudo */
+        position: relative;
+        /* so its pseudo is above parent backdrop */
+        z-index: 1;
+        /* flexible padding */
+        padding: min(1em, 4vw) min(2em, 2vw);
+        display: flex;
+        flex-direction: column;
+        gap: 0.75em;
+
+        &::after {
+            position: absolute;
+            /* attach to top & bottom */
+            inset: 0 auto;
+            /* prevent it from covering text content */
+            z-index: -1;
+            /* 1px extra to avoid hairline gaps */
+            padding-left: calc(var(--g) + 1px);
+            /* same background as parent */
+            background: inherit;
+            content: '';
+            /* the 1px difference is to prevent hairline gaps */
+            left: calc(100% - 1px);
+            clip-path: polygon(
+                /* top edge points */ 0 0,
+                calc(var(--g) + 1px) 0,
+                /* bottom edge points */ 100% 100%,
+                0 100%
+            );
+            aspect-ratio: tan(var(--a));
+        }
+
+        .accent {
+            width: fit-content;
+            padding: 0.5rem;
+            border-radius: 5px;
+            border: 2px solid $secondary;
+        }
+    }
+
+    figure {
+        display: grid;
+        container-type: size;
+    }
+
+    img {
+        /* horizontal stretch of image from angle */
+        --xo: 100cqh * tan(var(--a));
+        /* collapses img to nothing to prevent it from
+	 * overflowing its grid area (1 cell here) */
+        contain: size;
+        /* stretch collapsed img to its grid area */
+        place-self: stretch;
+        /* how much it has to expand past column width */
+        margin-right: calc(-1 * var(--xo));
+        /* prevent image distortion */
+        object-fit: cover;
+        /* xi = stretch relative to expanded img width */
+        /* xo = stretch relative to grid column width */
+        --xi: var(--xo);
+        clip-path: polygon(
+            /* top edge points */ 0 0,
+            calc(100% - var(--xi)) 0,
+            /* bottom edge points */ 100% 100%,
+            calc(var(--xi)) 100%
+        );
+    }
+}
+
+@media (max-width: $breakpoint-lg) {
+    .product-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0.5rem;
+
+        &__content {
+            &::after {
+                display: none;
+            }
+        }
+
+        figure {
+            height: 33vh;
+            width: 45%;
+            margin-bottom: 0.5rem;
+            &:last-child {
+                display: none;
+            }
+        }
+        
+        img {
+            margin-right: 0;
+            clip-path: none;
+            border-radius: 5px;
+        }
+    }
+}
