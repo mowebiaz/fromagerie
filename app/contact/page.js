@@ -1,24 +1,50 @@
+import { ContactCard } from '@/src/components/ContactCard/ContactCard'
 import { MapContainer } from '@/src/components/LeafletMap/MapContainer'
+import { FaPhoneSquareAlt } from "react-icons/fa";
+import { FaEnvelope } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa6";
 
 export default function ContactPage() {
   return (
     <main>
       <h1>Nous contacter</h1>
-      <h2>Coordonnées</h2>
-      <p>
-        Tél, E-mail, Adresse 74110 Avoriaz Horaires, heures d&apos;ouverture (en
-        saison)
-      </p>
-      <h2>Nous trouver</h2>
-      Boutique au cœur de la station (proche de xxxx). Accès piéton. En saison
-      hivernale : prévoir délai pour retrait en fin de journée.
-      <MapContainer />
-      <h2>Nous écrire</h2>
-      <p>
-        formulaire de contact: Nom, e-mail, téléphone, sujet, message,
-        date/heure souhaitées (plateaux), allergies/préférences. Mentions :
-        délai de réponse, données personnelles.
-      </p>
+      <section>
+        <div className="container">
+          <h2>Coordonnées</h2>
+          <ContactCard title="Téléphone" content="04 50 74 00 00" Icon={FaPhone}/>
+          <ContactCard title="E-mail" content="fromagerie-cimes@example.com" Icon={FaEnvelope}/>
+          <ContactCard title="Adresse" content="74110 Avoriaz" Icon={FaMapMarkerAlt}/>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <h2>Horaires</h2>
+          <p>
+            En saison, nous sommes ouverts tous les jours de 7h30 à 13h00 et de
+            16h00 à 20h00.<br></br>La boutique est fermée en intersaison. 
+            Nos dates d&apos;ouverture et de fermeture sont les mêmes que celles de
+            la station.
+          </p>
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <h2>Nous trouver</h2>
+          Notre boutique se situe au cœur de la station, proche du village des enfants.
+          <MapContainer />
+        </div>
+      </section>
+      <section>
+        <div className="container">
+          <h2>Nous écrire</h2>
+          <p>
+            formulaire de contact: Nom, e-mail, téléphone, sujet, message,
+            date/heure souhaitées (plateaux), allergies/préférences. Mentions :
+            délai de réponse, données personnelles.
+          </p>
+        </div>
+      </section>
     </main>
   )
 }

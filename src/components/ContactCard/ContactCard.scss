@@ -1,0 +1,19 @@
+@use '@/src/styles/scss/variables' as *;
+
+.contact-card {
+    display: flex;
+    gap: 0.5vw;
+    margin: 0.5rem;
+    padding-top: 0.5rem;
+
+    &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 35px;
+        height: 35px;
+        background: linear-gradient(135deg, $primary, $secondary);
+        border-radius: 50%;
+        color: white;
+    }
+}
