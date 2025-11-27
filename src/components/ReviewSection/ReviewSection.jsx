@@ -13,26 +13,12 @@ export const ReviewSection = ({ items }) => {
     <section id="reviews">
       <div className="container">
         <h2>Ils parlent de nous</h2>
-
-        {/*         <ul className="review">
-          {items.map((item) => (
-            <ReviewCard
-              key={item.id}
-              review={item}
-            />
-          ))}
-        </ul> */}
         <Swiper
           modules={[Navigation, Pagination, Autoplay]}
           navigation
           pagination={{ clickable: true }}
           loop={true}
           spaceBetween={30}
-          autoplay={{
-            delay: 2000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true,
-          }}
           breakpoints={{
             320: {
               slidesPerView: 1,
