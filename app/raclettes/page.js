@@ -10,9 +10,9 @@ export default function RaclettesPage() {
         <p>
           À deux pas de la Suisse, Avoriaz est un terrain de jeu idéal pour une
           raclette réussie. A la Fromagerie des Cimes, nous proposons plusieurs
-          profils : nature, fumée, ail des ours, 3 poivres, chèvre… et tout
-          l’accompagnement : pommes de terre, charcuteries, cornichons, pain,
-          vins blancs de montagne.
+          profils : nature, fumée, ail des ours, 3 poivres, chèvre… et tout ce
+          qu&apos;il faut pour l’accompagnement : pommes de terre, charcuteries,
+          cornichons, pain, vins blancs de montagne.
         </p>
       </div>
 

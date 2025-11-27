@@ -5,7 +5,9 @@ main.produits {
     margin-top: calc(57px + 5rem);
 }
 
-#fromages, #charcuterie, #epicerie {
+#fromages,
+#charcuterie,
+#epicerie {
     scroll-margin-top: calc(57px + 115px); //header + subnav
 
     @include lg {
@@ -16,6 +18,32 @@ main.produits {
 #fromages {
     h3 {
         font-family: var(--font-playfair);
-        
+    }
+}
+
+#epicerie,
+#charcuterie {
+    .content-with-image {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: clamp(1rem, 2vw, 3rem);
+        //align-items: start;
+        align-items: center;
+
+        @include md {
+            grid-template-columns: 1fr 1fr;
+        }
+
+            .image {
+        position: relative;
+        min-height: clamp(13.75rem, 11.989rem + 7.51vw, 18.75rem);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+
+        img {
+            object-fit: cover;
+        }
+    }
     }
 }

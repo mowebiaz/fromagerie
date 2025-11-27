@@ -8,7 +8,7 @@ export const products = [
       images: [
       { src: '/images/pate-pressee-1.webp', alt: 'Fromage à pâte pressée 1'},
       { src: '/images/pate-pressee-2.webp', alt: 'Fromage à pâte pressée 2' },
-      { src: '/images/3.png', alt: 'Fromage à pâte pressée 3'},
+      { src: '/images/pate-pressee-3.webp', alt: 'meule de Savoie, fromage à pâte pressée'},
     ],
   },
     {

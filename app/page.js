@@ -74,7 +74,11 @@ export default function HomePage() {
             de charcuteries, une crèmerie gourmande, des bocaux, miels, crozets…
             et une cave pensée pour sublimer vos raclettes et fondues.
           </p>
-          <p>🥖 🥐 Dépôt de pain quotidien, en saison</p>
+          <div className='note'>
+
+          <p>🥐 En saison, dépôt quotidien de pain et de viennoiseries</p>
+
+          </div>
           <div className="boutique__images">
             <div className="card">
               <Image

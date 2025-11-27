@@ -29,12 +29,12 @@
     }
 }
 
-/* section:nth-child(2n) {
-    background-color: $cream;
-} */
-
 #boutique {
     position: relative;
+
+    .note {
+        @include note;
+    }
 }
 
 .boutique__images {

@@ -41,3 +41,15 @@
     cursor: pointer;
     text-align: center;
 }
+
+@mixin note {
+    width: fit-content;
+    border: 1px solid $border;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    //border:thick double $secondary;
+    border: 2px dotted $secondary;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
+    margin: 0.5rem;
+    line-height: 1.2;
+}

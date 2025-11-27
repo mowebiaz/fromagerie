@@ -19,10 +19,10 @@ export const specialties = [
   {
     id: '3',
     size: 'medium',
-    title: 'Abondance AOP (Haute-Savoie)',
+    title: 'Abondance AOP',
     content:
-      'Fromage de vache à pâte pressée cuite, texture souple et arômes fruités/typiquement “noisette”. Affinage en cave sur planches d’épicéa qui lui donne sa belle longueur en bouche.',
-    image: { src: '/images/1.png', alt: 'image3' },
+      'Texture souple et arômes fruités/typiquement “noisette”. Affinage en cave sur planches d’épicéa qui lui donne sa belle longueur en bouche.',
+    image: { src: '/images/fromage-abondance.webp', alt: 'tranche de fromage abondance sur une ardoise' },
   },
   {
     id: '4',
@@ -30,7 +30,7 @@ export const specialties = [
     title: 'Tomme de Savoie IGP',
     content:
       'Goût doux et typé à la fois, avec sa croûte rustique. Un incontournable des plateaux de montagne.',
-    image: { src: '/images/1.png', alt: 'image4' },
+    image: { src: '/images/tomme-de-savoie.webp', alt: 'tomme de savoie sur une ardoise' },
   },
   {
     id: '5',
@@ -38,6 +38,6 @@ export const specialties = [
     title: 'Reblochon fermier AOP',
     content:
       'Crémeux et parfumé, issu de petites fermes de Haute-Savoie. Parfait en tartiflette ou sur un plateau.',
-    image: { src: '/images/1.png', alt: 'image4' },
+    image: { src: '/images/reblochon.webp', alt: 'reblochon sur une ardoise' },
   },
 ]
