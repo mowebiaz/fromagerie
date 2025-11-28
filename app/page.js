@@ -14,6 +14,20 @@ import { svgToComponent } from '@/src/utils/svgToComponent'
 import './page.scss'
 import { BtnLink } from '@/src/components/BtnLink/BtnLink'
 
+export const metadata = {
+  description:
+    'Fromagerie artisanale à Avoriaz : raclettes, fondues, plateaux, charcuteries et produits locaux.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Fromagerie à Avoriaz – Fromagerie des Cimes',
+    description:
+      'Fromages savoyards, raclettes, fondues et plateaux prêts à partager à Avoriaz.',
+    url: '/', // devient https://fromageriedescimes.fr/ via metadataBase
+  },
+}
+
 export default function HomePage() {
   //const Logo = svgToComponent(logo)
 
@@ -42,13 +56,11 @@ export default function HomePage() {
               meilleurs fromages de notre terroir et d&apos;ailleurs. Chaque
               fromage raconte une histoire, celle de son producteur, de son
               terroir et de son savoir-faire. Nous sommes fiers de vous les
-              faire découvrir et de partager notre passion avec vous.
-              Née de l’amour des fromages de montagne, nous travaillons en
-              direct avec des producteurs et affineurs indépendants. Nous
-              défendons une sélection courte, de saison et de caractère, affinée
-              avec patience pour révéler la richesse de nos terroirs
-              alpins.
-              
+              faire découvrir et de partager notre passion avec vous. Née de
+              l’amour des fromages de montagne, nous travaillons en direct avec
+              des producteurs et affineurs indépendants. Nous défendons une
+              sélection courte, de saison et de caractère, affinée avec patience
+              pour révéler la richesse de nos terroirs alpins.
             </p>
           </div>
           <div className="histoire__image">
@@ -74,10 +86,8 @@ export default function HomePage() {
             de charcuteries, une crèmerie gourmande, des bocaux, miels, crozets…
             et une cave pensée pour sublimer vos raclettes et fondues.
           </p>
-          <div className='note'>
-
-          <p>🥐 En saison, dépôt quotidien de pain et de viennoiseries</p>
-
+          <div className="note">
+            <p>🥐 En saison, dépôt quotidien de pain et de viennoiseries</p>
           </div>
           <div className="boutique__images">
             <div className="card">

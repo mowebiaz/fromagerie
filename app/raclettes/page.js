@@ -1,10 +1,52 @@
 import Image from 'next/image'
 import { FormulaCard } from '@/src/components/FormulaCard/FormulaCard'
 import './raclettes.scss'
+import { JsonLd } from '@/src/components/JsonLd/JsonLd'
+
+export const metadata = {
+  title:
+    'Raclette à Avoriaz – Fromage & assortiments',
+  description:
+    'Raclettes nature, fumée, ail des ours, 3 poivres, chèvre… Pommes de terre, charcuteries, cornichons, pains et vins adaptés. Conseils & prêt d’appareil sur demande.',
+  alternates: {
+    canonical: 'https://morganeweb.com/',
+  },
+  openGraph: {
+    title: 'Fromagerie des Cimes: Raclette à Avoriaz',
+    description:
+      'Raclettes nature, fumée, ail des ours, 3 poivres, chèvre… Pommes de terre, charcuteries, cornichons, pains et vins adaptés. Conseils & prête d’appareil sur demande.',
+    url: '/raclettes',
+    // mettre l'image par défaut
+    images: [
+      {
+        url: '/images/og/raclette.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Plateau de fromages et charcuteries à Avoriaz',
+      },
+    ],
+  },
+}
+
+const racletteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: 'Raclette – Fromagerie des Cimes',
+  description:
+    'Raclettes nature, fumée, ail des ours, 3 poivres, chèvre, avec accompagnements.',
+  category: 'Fromage à raclette',
+  offers: {
+    '@type': 'Offer',
+    availability: 'https://schema.org/InStoreOnly',
+    priceCurrency: 'EUR',
+    url: '',
+  },
+}
 
 export default function RaclettesPage() {
   return (
     <main className="raclettes">
+      <JsonLd schema={racletteJsonLd} />
       <h1>La raclette, star de l’hiver</h1>
       <div className="container">
         <p>
