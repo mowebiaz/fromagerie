@@ -1,0 +1,19 @@
+@use '@/src/styles/scss/variables' as *;
+
+
+.link {
+    background-color: transparent;
+    text-decoration: underline dotted $primary 2px;
+    text-underline-offset: 5px;
+    outline: none;
+    padding: 5px;
+    transition: all 200ms ease-in-out;
+    &[data-hovered],
+    &[data-pressed] {
+        background-color: $primary;
+        color: $background;
+        border-radius: 5px;
+        text-decoration: none;
+    }
+}
+

@@ -1,5 +1,6 @@
 import { ContactCard } from '@/src/components/ContactCard/ContactCard'
 import { MapContainer } from '@/src/components/LeafletMap/MapContainer'
+import { LinkAria } from '@/src/components/LinkAria/LinkAria';
 import { FaPhoneSquareAlt } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
 import { FaMapMarkerAlt } from "react-icons/fa";
@@ -31,7 +32,14 @@ export default function ContactPage() {
       <section>
         <div className="container">
           <h2>Nous trouver</h2>
-          Notre boutique se situe au cœur de la station, proche du village des enfants.
+          Notre boutique se situe au cœur de la station, proche du 
+          <LinkAria
+            className="link"
+            href={'https://www.village-des-enfants.com/fr/'}
+            target="_blank"
+            referrerPolicy="no-opener no-referrer"
+          >
+            village des enfants</LinkAria>.
           <MapContainer />
         </div>
       </section>
