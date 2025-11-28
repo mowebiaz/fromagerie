@@ -10,6 +10,7 @@
     align-items: center;
     gap: 2rem;
     padding: 1rem;
+
     p {
         font-size: 1rem;
     }
@@ -17,11 +18,13 @@
     &__top {
         display: flex;
         flex-direction: column;
-        gap: 3rem;
+        align-items: center;
+        gap: 1.8rem;
         @media screen and (min-width: 768px) {
             flex-direction: row;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-start;
+            gap:3rem;
         }
     }
 
@@ -42,5 +45,56 @@
             width: 100%;
             justify-content: space-between;
         }
+    }
+    
+    &__social {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    &__social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 0.5rem;
+
+        .social-link {
+/*             height: 50px;
+            width: 50px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center; */
+            outline: none;
+
+            svg {
+                fill: $background;
+                width: 30px;
+                height: 30px;
+                transition: fill 250ms ease-in-out;
+            }
+            &[data-hovered],
+            &[data-pressed] {
+                svg {
+                    fill: $secondary;
+                }
+            }
+        }
+    }
+
+    &__info {
+        text-align: center;
+    }
+
+    &__hours {
+        text-align: center;
+    }
+
+    p.footer__title {
+        font-weight: 700;
+        font-size: 1.2rem;
     }
 }
