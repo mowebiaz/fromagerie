@@ -1,6 +1,8 @@
 import { FormulaCard } from '@/src/components/FormulaCard/FormulaCard'
 import './fondues.scss'
+import { FaqComponent } from '@/src/components/FaqComponent/FaqComponent'
 import { JsonLd } from '@/src/components/JsonLd/JsonLd'
+import { faqFondues } from '@/src/data/faq'
 
 export const metadata = {
   title: 'Fondue savoyarde à Avoriaz – Recettes maison',
@@ -88,7 +90,14 @@ export default function FonduesPage() {
           </p>
         </div>
       </section>
-      <p>CTA : “Commander une fondue” → /contact</p>
+      <section>
+        <div className="container">
+          <FaqComponent
+            className={'faq'}
+            items={faqFondues}
+          />
+        </div>
+      </section>
     </main>
   )
 }

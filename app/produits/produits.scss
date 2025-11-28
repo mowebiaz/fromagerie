@@ -19,6 +19,14 @@ main.produits {
     h3 {
         font-family: var(--font-playfair);
     }
+
+    .cta {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 #epicerie,
@@ -34,16 +42,16 @@ main.produits {
             grid-template-columns: 1fr 1fr;
         }
 
-            .image {
-        position: relative;
-        min-height: clamp(13.75rem, 11.989rem + 7.51vw, 18.75rem);
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+        .image {
+            position: relative;
+            min-height: clamp(13.75rem, 11.989rem + 7.51vw, 18.75rem);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 
-        img {
-            object-fit: cover;
+            img {
+                object-fit: cover;
+            }
         }
-    }
     }
 }

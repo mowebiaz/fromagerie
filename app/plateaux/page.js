@@ -96,18 +96,18 @@ export default function PlateauxPage() {
         </div>
       </section>
 
-      <h2>Commander (ancre #commander)</h2>
-      <p>
-        Commande la veille recommandée (en saison : le matin pour le soir selon
-        dispo). Indiquez la date/heure de retrait, le nombre de personnes,
-        préférences et allergies. CTA : “Demander un devis rapide” →
-        /contact?type=plateau
-      </p>
-      <p>
-        FAQ Proposez-vous des plateaux sans charcuterie ? Oui, version 100%
-        fromages. Ajoutez-vous du pain ? Oui, dépôt quotidien. Prêts pour la
-        raclette/fondue ? Nous préparons aussi portions & accompagnements.
-      </p>
+      <section>
+        <div className="container">
+          <h2>Commander</h2>
+          <p>
+            En saison et pendant les vacances, nous vous conseillons vivement de
+            réserver, surtout pour les groupes. Cela nous permet de préparer vos
+            plateaux dans les meilleures conditions et de garantir la
+            disponibilité des produits que vous souhaitez.
+            Pour commander, passez en boutique ou bien appelez-nous au 04 50 74 00 00
+          </p>
+        </div>
+      </section>
     </main>
   )
 }

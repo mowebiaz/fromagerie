@@ -1,9 +1,13 @@
-import { SubnavAnchors } from '@/src/components/SubnavAnchors/SubnavAnchors'
-import './produits.scss'
 import Image from 'next/image'
 import { JsonLd } from '@/src/components/JsonLd/JsonLd'
 import { ProductContainer } from '@/src/components/ProductContainer/ProductContainer'
+import { SubnavAnchors } from '@/src/components/SubnavAnchors/SubnavAnchors'
 import { products } from '@/src/data/products'
+import './produits.scss'
+import Link from 'next/link'
+import { BtnLink } from '@/src/components/BtnLink/BtnLink'
+import { FaqComponent } from '@/src/components/FaqComponent/FaqComponent'
+import { faqProduits } from '@/src/data/faq'
 
 export const metadata = {
   title: 'Nos fromages, charcuteries et cave',
@@ -98,6 +102,7 @@ export default function ProduitsPage() {
       <SubnavAnchors items={items} />
       <main className="produits">
         <JsonLd schema={productsJsonLd} />
+
         <section id="fromages">
           <div className="container">
             <h1>Nos produits</h1>
@@ -117,11 +122,16 @@ export default function ProduitsPage() {
                 images={product.images}
               />
             ))}
-
-            <p>
-              CTA : “Voir nos raclettes” → /raclette | “Voir nos fondues” →
-              /fondue | “Commander un plateau” → /plateaux#commander
-            </p>
+            <div className="cta">
+              <BtnLink
+                href="/raclettes"
+                text="nos raclettes"
+              />
+              <BtnLink
+                href="/fondues"
+                text="nos fondues"
+              />
+            </div>
           </div>
         </section>
 
@@ -143,12 +153,11 @@ export default function ProduitsPage() {
 
               <div className="image">
                 <Image
-                  src="/images/1.png"
+                  src="/images/saucisson.webp"
                   alt="fromagerie des cimes: notre histoire"
                   fill
                   quality={100}
-                  /*               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 44vw, 40vw"
-              priority */
+                  sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>
             </div>
@@ -178,6 +187,15 @@ export default function ProduitsPage() {
               exigence que nos fromages, pour que chaque visite soit l’occasion
               de composer un assortiment gourmand, pratique et authentique.
             </p>
+          </div>
+        </section>
+
+        <section>
+          <div className="container">
+            <FaqComponent
+              className={'faq'}
+              items={faqProduits}
+            />
           </div>
         </section>
       </main>

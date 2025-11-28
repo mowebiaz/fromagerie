@@ -17,10 +17,10 @@ export const FaqComponent = ({ className, items, ...props }) => (
         <Heading>
           <Button slot="trigger">
             <FaCircleChevronRight size={30}/>
-            {item.title}
+            {item.question}
           </Button>
         </Heading>
-        <DisclosurePanel>{item.content}</DisclosurePanel>
+        <DisclosurePanel>{item.answer}</DisclosurePanel>
       </Disclosure>
     ))}
   </DisclosureGroup>

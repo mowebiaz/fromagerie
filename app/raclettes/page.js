@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import { FormulaCard } from '@/src/components/FormulaCard/FormulaCard'
 import './raclettes.scss'
+import { FaqComponent } from '@/src/components/FaqComponent/FaqComponent'
 import { JsonLd } from '@/src/components/JsonLd/JsonLd'
+import { faqRaclettes } from '@/src/data/faq'
 
 export const metadata = {
-  title:
-    'Raclette à Avoriaz – Fromage & assortiments',
+  title: 'Raclette à Avoriaz – Fromage & assortiments',
   description:
     'Raclettes nature, fumée, ail des ours, 3 poivres, chèvre… Pommes de terre, charcuteries, cornichons, pains et vins adaptés. Conseils & prêt d’appareil sur demande.',
   alternates: {
@@ -158,13 +159,14 @@ export default function RaclettesPage() {
         </div>
       </section>
 
-      <p>CTA : “Je commande ma raclette” → /contact ou ancre de commande.</p>
-      <p>
-        FAQ (extraits) Quelle quantité prévoir ? Comptez 200–250 g de fromage
-        par personne. Proposez-vous une option sans porc ? Oui, alternative
-        charcuterie de bœuf/volaille ou plateau végétarien. Peut-on mixer
-        plusieurs parfums ? Bien sûr, au choix selon disponibilité.
-      </p>
+      <section>
+        <div className="container">
+          <FaqComponent
+            className={'faq'}
+            items={faqRaclettes}
+          />
+        </div>
+      </section>
     </main>
   )
 }

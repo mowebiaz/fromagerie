@@ -1,12 +1,10 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import logo from '@/public/logo.svg'
-import { FaqComponent } from '@/src/components/FaqComponent/FaqComponent'
 import { FeaturesSection } from '@/src/components/FeaturesSection/FeaturesSection'
 import { HeroVideo } from '@/src/components/HeroVideo/HeroVideo'
 import { ReviewSection } from '@/src/components/ReviewSection/ReviewSection'
 import { SpecialtySection } from '@/src/components/SpecialtySection/SpecialtySection'
-import { faqHome } from '@/src/data/faq'
 import { features } from '@/src/data/features'
 import { reviews } from '@/src/data/reviews'
 import { specialties } from '@/src/data/specialties'
@@ -128,15 +126,6 @@ export default function HomePage() {
       <FeaturesSection items={features} />
 
       <ReviewSection items={reviews} />
-
-      <section>
-        <div className="container">
-          <FaqComponent
-            className={'faq'}
-            items={faqHome}
-          />
-        </div>
-      </section>
     </main>
   )
 }
