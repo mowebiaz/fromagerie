@@ -1,0 +1,20 @@
+@use '@/src/styles/scss/mixins' as *;
+@use '@/src/styles/scss/variables' as *;
+
+#not-found {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+
+    h1 {
+        font-size: 7vh;
+    }
+    h2::after {
+        display: none;
+    }
+    a {
+        @include link-router;
+    }
+}

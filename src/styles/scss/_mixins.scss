@@ -47,9 +47,23 @@
     border: 1px solid $border;
     padding: 0.5rem 1rem;
     border-radius: 10px;
-    //border:thick double $secondary;
     border: 2px dotted $secondary;
     box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.1);
     margin: 0.5rem;
     line-height: 1.2;
+}
+
+@mixin link-router {
+        background-color: transparent;
+    text-decoration: underline dotted $primary 2px;
+    text-underline-offset: 5px;
+    outline: none;
+    padding: 5px;
+    transition: all 200ms ease-in-out;
+    &:hover {
+        background-color: $primary;
+        color: $background;
+        border-radius: 5px;
+        text-decoration: none;
+    }
 }
