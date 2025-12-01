@@ -1,7 +1,6 @@
 import Image from 'next-export-optimize-images/image'
 import { FaqComponent } from '@/src/components/FaqComponent/FaqComponent'
 import { FormulaCard } from '@/src/components/FormulaCard/FormulaCard'
-import { JsonLd } from '@/src/components/JsonLd/JsonLd'
 import { faqRaclettes } from '@/src/data/faq'
 import './raclettes.scss'
 
@@ -29,25 +28,9 @@ export const metadata = {
   },
 }
 
-const racletteJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Product',
-  name: 'Raclette – Fromagerie des Cimes',
-  description:
-    'Raclettes nature, fumée, ail des ours, 3 poivres, chèvre, avec accompagnements.',
-  category: 'Fromage à raclette',
-  offers: {
-    '@type': 'Offer',
-    availability: 'https://schema.org/InStoreOnly',
-    priceCurrency: 'EUR',
-    url: '',
-  },
-}
-
 export default function RaclettesPage() {
   return (
     <main className="raclettes">
-      <JsonLd schema={racletteJsonLd} />
       <h1>La raclette, star de l’hiver</h1>
       <div className="container">
         <p>
