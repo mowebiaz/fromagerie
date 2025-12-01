@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next-export-optimize-images/image'
 import { FormulaCard } from '@/src/components/FormulaCard/FormulaCard'
 import { JsonLd } from '@/src/components/JsonLd/JsonLd'
 import './plateaux.scss'

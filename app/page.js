@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next-export-optimize-images/image'
 import { BtnLink } from '@/src/components/BtnLink/BtnLink'
 import { FeaturesSection } from '@/src/components/FeaturesSection/FeaturesSection'
 import { HeroVideo } from '@/src/components/HeroVideo/HeroVideo'
