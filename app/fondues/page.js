@@ -1,8 +1,7 @@
-import { FormulaCard } from '@/src/components/FormulaCard/FormulaCard'
-import './fondues.scss'
 import { FaqComponent } from '@/src/components/FaqComponent/FaqComponent'
-import { JsonLd } from '@/src/components/JsonLd/JsonLd'
+import { FormulaCard } from '@/src/components/FormulaCard/FormulaCard'
 import { faqFondues } from '@/src/data/faq'
+import './fondues.scss'
 
 export const metadata = {
   title: 'Fondue savoyarde à Avoriaz – Recettes maison',
@@ -20,25 +19,9 @@ export const metadata = {
   },
 }
 
-const fonduesJsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Product',
-  name: 'Fondue savoyarde',
-  description:
-    'Assemblage de Beaufort, Abondance et Emmental (ou Gruyère de Savoie). Prête à fondre.',
-  category: 'Fondue savoyarde',
-  offers: {
-    '@type': 'Offer',
-    availability: 'https://schema.org/InStoreOnly',
-    priceCurrency: 'EUR',
-    url: '{{siteUrl}}/fondue',
-  },
-}
-
 export default function FonduesPage() {
   return (
     <main>
-      <JsonLd schema={fonduesJsonLd} />
       <h1>Fondue savoyarde : nos mélanges prêts à fondre</h1>
       <div className="container">
         <p>
