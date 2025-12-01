@@ -20,8 +20,15 @@ export const metadata = {
 const plateauxJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
+  name: 'Plateaux de fromages et charcuteries',
+  description:
+    "'Préparation de plateaux de fromages et charcuteries pour l’apéro, les repas de famille ou les grandes tablées à Avoriaz.",
   serviceType: 'Plateaux de fromages et charcuteries',
-  provider: { '@type': 'FoodEstablishment', name: 'Fromagerie des Cimes' },
+  provider: {
+    '@type': 'FoodEstablishment',
+    '@id': '{{siteUrl}}/#fromagerie',
+    name: 'La Fromagerie des Cimes',
+  },
   areaServed: { '@type': 'Place', name: 'Avoriaz (74110)' },
   url: '{{siteUrl}}/plateaux',
 }

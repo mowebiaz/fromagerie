@@ -25,18 +25,8 @@ const contactJsonLd = {
   '@type': 'ContactPage',
   name: 'Contact La Fromagerie des Cimes',
   url: '{{siteUrl}}/contact',
-  about: {
-    '@type': 'LocalBusiness',
-    name: 'La Fromagerie des Cimes',
-    email: 'fromagerie-cimes@example.com',
-    telephone: '04 50 74 00 00',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: 'xxx',
-      addressLocality: 'Avoriaz',
-      postalCode: '74110',
-      addressCountry: 'FR',
-    },
+  mainEntity: {
+    '@id': '{{siteUrl}}/contact',
   },
 }
 
@@ -92,7 +82,7 @@ export default function ContactPage() {
           <MapContainer />
         </div>
       </section>
-{/*       <section>
+      {/*       <section>
         <div className="container">
           <h2>Nous écrire</h2>
           <p>

@@ -36,54 +36,56 @@ const productsJsonLd = {
   '@type': 'ItemList',
   url: '{{siteUrl}}/produits',
   name: 'Nos produits – Fromagerie des Cimes',
-  mainEntity: {
-    '@type': 'ItemList',
-    name: 'Catégories de produits',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: 'Fromages à pâte molle',
-        description:
-          'Brie, camembert, vacherin, bleu du Vercors… Fromages crémeux et fondants aux arômes délicats.',
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'Fromages à pâte pressée',
-        description:
-          'Comté, Beaufort, Abondance, Reblochon, Morbier, Gruyère, Emmental, Tomme de Savoie… Des fromages de caractère pour plateau ou cuisine de montagne.',
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: 'Fromages de chèvre',
-        description:
-          'Chèvres frais, cendrés ou affinés, et spécialités de saison comme le chèvre à l’ail des ours.',
-      },
-      {
-        '@type': 'ListItem',
-        position: 4,
-        name: 'Charcuteries de montagne',
-        description:
-          'Viande des Grisons, jambon de pays, rosette, coppa, saucissons nature, aux noix, au Beaufort, au poivre ou aux herbes.',
-      },
-      {
-        '@type': 'ListItem',
-        position: 5,
-        name: 'Crèmerie & épicerie fine',
-        description:
-          'Beurre, lait, miels, cornichons, bocaux de spécialités, crozets, douceurs sucrées, dépôt de pain en saison.',
-      },
-      {
-        '@type': 'ListItem',
-        position: 6,
-        name: 'Cave',
-        description:
-          'Génépi, bières locales et vins blancs de Savoie pour accompagner raclettes, fondues et plateaux de fromages.',
-      },
-    ],
+  about: {
+    '@id': '{{siteUrl}}/#fromagerie',
+    '@type': 'FoodEstablishment',
+    name: 'La Fromagerie des Cimes',
   },
+
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'Fromages à pâte molle',
+      description:
+        'Brie, camembert, vacherin, bleu du Vercors… Fromages crémeux et fondants aux arômes délicats.',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: 'Fromages à pâte pressée',
+      description:
+        'Comté, Beaufort, Abondance, Reblochon, Morbier, Gruyère, Emmental, Tomme de Savoie… Des fromages de caractère pour plateau ou cuisine de montagne.',
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      name: 'Fromages de chèvre',
+      description:
+        'Chèvres frais, cendrés ou affinés, et spécialités de saison comme le chèvre à l’ail des ours.',
+    },
+    {
+      '@type': 'ListItem',
+      position: 4,
+      name: 'Charcuteries de montagne',
+      description:
+        'Viande des Grisons, jambon de pays, rosette, coppa, saucissons nature, aux noix, au Beaufort, au poivre ou aux herbes.',
+    },
+    {
+      '@type': 'ListItem',
+      position: 5,
+      name: 'Crèmerie & épicerie fine',
+      description:
+        'Beurre, lait, miels, cornichons, bocaux de spécialités, crozets, douceurs sucrées, dépôt de pain en saison.',
+    },
+    {
+      '@type': 'ListItem',
+      position: 6,
+      name: 'Cave',
+      description:
+        'Génépi, bières locales et vins blancs de Savoie pour accompagner raclettes, fondues et plateaux de fromages.',
+    },
+  ],
 }
 
 export default function ProduitsPage() {

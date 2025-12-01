@@ -34,6 +34,7 @@ export const metadata = {
 const layoutJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FoodEstablishment',
+  '@id': '{{siteUrl}}/#fromagerie',
   name: 'La Fromagerie des Cimes',
   description:
     'Fromagerie artisanale à Avoriaz : raclettes, fondues, plateaux, charcuteries et cave locale.',
@@ -48,42 +49,42 @@ const layoutJsonLd = {
     addressCountry: 'FR',
   },
   geo: { '@type': 'GeoCoordinates', latitude: 46.191, longitude: 6.777 },
+  openingHoursSpecification: [
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday',
+      ],
+      opens: '07:30',
+      closes: '13:00',
+    },
+    {
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: [
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+        'Sunday',
+      ],
+      opens: '16:00',
+      closes: '20:00',
+    },
+  ],
   contactPoint: {
     '@type': 'ContactPoint',
     telephone: '04 50 74 00 00',
     contactType: 'customer service',
     areaServed: 'FR',
     availableLanguage: ['fr'],
-    openingHoursSpecification: [
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: [
-          'Monday',
-          'Tuesday',
-          'Wednesday',
-          'Thursday',
-          'Friday',
-          'Saturday',
-          'Sunday',
-        ],
-        opens: '07:30',
-        closes: '13:00',
-      },
-      {
-        '@type': 'OpeningHoursSpecification',
-        dayOfWeek: [
-          'Monday',
-          'Tuesday',
-          'Wednesday',
-          'Thursday',
-          'Friday',
-          'Saturday',
-          'Sunday',
-        ],
-        opens: '16:00',
-        closes: '20:00',
-      },
-    ],
   },
   //"sameAs": ["{{instagram}}","{{facebook}}"]
 }
