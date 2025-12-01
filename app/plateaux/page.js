@@ -1,7 +1,7 @@
 import Image from 'next/image'
-import './plateaux.scss'
 import { FormulaCard } from '@/src/components/FormulaCard/FormulaCard'
 import { JsonLd } from '@/src/components/JsonLd/JsonLd'
+import './plateaux.scss'
 
 export const metadata = {
   title: 'Plateaux de fromages et charcuteries à Avoriaz – Sur-mesure',
@@ -38,7 +38,6 @@ export default function PlateauxPage() {
               src="/images/plateau-de-fromages.webp"
               alt="fromagerie des cimes: notre histoire"
               fill
-              quality={100}
               sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 592px"
               priority
             />
@@ -103,8 +102,8 @@ export default function PlateauxPage() {
             En saison et pendant les vacances, nous vous conseillons vivement de
             réserver, surtout pour les groupes. Cela nous permet de préparer vos
             plateaux dans les meilleures conditions et de garantir la
-            disponibilité des produits que vous souhaitez.
-            Pour commander, passez en boutique ou bien appelez-nous au 04 50 74 00 00
+            disponibilité des produits que vous souhaitez. Pour commander,
+            passez en boutique ou bien appelez-nous au 04 50 74 00 00
           </p>
         </div>
       </section>

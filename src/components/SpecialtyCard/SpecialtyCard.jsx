@@ -10,7 +10,6 @@ export const SpecialtyCard = ({ size, title, content, link, image }) => {
           src={image.src}
           alt={image.alt}
           fill
-          quality={100}
           sizes="(max-width: 576px) 100vw, 50vw"
         />
       </div>

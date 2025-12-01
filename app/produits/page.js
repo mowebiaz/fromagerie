@@ -1,13 +1,12 @@
 import Image from 'next/image'
+import { BtnLink } from '@/src/components/BtnLink/BtnLink'
+import { FaqComponent } from '@/src/components/FaqComponent/FaqComponent'
 import { JsonLd } from '@/src/components/JsonLd/JsonLd'
 import { ProductContainer } from '@/src/components/ProductContainer/ProductContainer'
 import { SubnavAnchors } from '@/src/components/SubnavAnchors/SubnavAnchors'
+import { faqProduits } from '@/src/data/faq'
 import { products } from '@/src/data/products'
 import './produits.scss'
-import Link from 'next/link'
-import { BtnLink } from '@/src/components/BtnLink/BtnLink'
-import { FaqComponent } from '@/src/components/FaqComponent/FaqComponent'
-import { faqProduits } from '@/src/data/faq'
 
 export const metadata = {
   title: 'Nos fromages, charcuteries et cave',
@@ -142,9 +141,8 @@ export default function ProduitsPage() {
               <div className="image">
                 <Image
                   src="/images/saucisson.webp"
-                  alt="fromagerie des cimes: notre histoire"
+                  alt="de nombreux saucissons en présentation dans un panier d'osier"
                   fill
-                  quality={100}
                   sizes="(max-width: 768px) 100vw, 50vw"
                 />
               </div>

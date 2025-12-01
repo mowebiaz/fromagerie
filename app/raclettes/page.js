@@ -1,9 +1,9 @@
 import Image from 'next/image'
-import { FormulaCard } from '@/src/components/FormulaCard/FormulaCard'
-import './raclettes.scss'
 import { FaqComponent } from '@/src/components/FaqComponent/FaqComponent'
+import { FormulaCard } from '@/src/components/FormulaCard/FormulaCard'
 import { JsonLd } from '@/src/components/JsonLd/JsonLd'
 import { faqRaclettes } from '@/src/data/faq'
+import './raclettes.scss'
 
 export const metadata = {
   title: 'Raclette à Avoriaz – Fromage & assortiments',
@@ -75,11 +75,9 @@ export default function RaclettesPage() {
           <div className="image">
             <Image
               src="/images/1.png"
-              alt="fromagerie des cimes: notre histoire"
+              alt="fromages à raclette"
               fill
-              quality={100}
-              /*               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 44vw, 40vw"
-              priority */
+              sizes="(max-width: 768px) 100vw, 50vw"
             />
           </div>
         </div>
@@ -147,7 +145,6 @@ export default function RaclettesPage() {
               alt="Vache de race Abondance en alpage, utilisée pour la production de Raclette de Savoie IGP"
               width={203}
               height={150}
-              quality={100}
             />
             <p>
               La Raclette de Savoie bénéficie d’une IGP depuis 2017. Elle est

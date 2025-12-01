@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import { BtnLink } from '@/src/components/BtnLink/BtnLink'
 import { FeaturesSection } from '@/src/components/FeaturesSection/FeaturesSection'
 import { HeroVideo } from '@/src/components/HeroVideo/HeroVideo'
 import { ReviewSection } from '@/src/components/ReviewSection/ReviewSection'
@@ -7,9 +7,7 @@ import { SpecialtySection } from '@/src/components/SpecialtySection/SpecialtySec
 import { features } from '@/src/data/features'
 import { reviews } from '@/src/data/reviews'
 import { specialties } from '@/src/data/specialties'
-import { svgToComponent } from '@/src/utils/svgToComponent'
 import './page.scss'
-import { BtnLink } from '@/src/components/BtnLink/BtnLink'
 
 export const metadata = {
   description:
@@ -26,7 +24,6 @@ export const metadata = {
 }
 
 export default function HomePage() {
-
   return (
     <main className="home">
       <HeroVideo />
@@ -64,7 +61,6 @@ export default function HomePage() {
               src="/images/histoire-des-cimes.webp"
               alt="cuillère en bois contenant du fromage fondu"
               fill
-              quality={100}
               sizes="(max-width: 768px) 100vw, 35vw"
               priority
             />
