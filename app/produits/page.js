@@ -139,6 +139,15 @@ export default function ProduitsPage() {
           <div className="container">
             <h2>Charcuterie & saucissons de montagne</h2>
             <div className="content-with-image">
+              <div className="image">
+                <Image
+                  src="/images/saucisson.webp"
+                  alt="fromagerie des cimes: notre histoire"
+                  fill
+                  quality={100}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
+              </div>
               <p>
                 La charcuterie est la complice idéale de nos fromages de Savoie.
                 Jambon cru, viande des Grisons, coppa, pancetta, rosette, sans
@@ -150,16 +159,6 @@ export default function ProduitsPage() {
                 coppa, pancetta, rosette. saucissons… Saucissons : nature, noix,
                 Beaufort, poivre, herbes.
               </p>
-
-              <div className="image">
-                <Image
-                  src="/images/saucisson.webp"
-                  alt="fromagerie des cimes: notre histoire"
-                  fill
-                  quality={100}
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
             </div>
           </div>
         </section>

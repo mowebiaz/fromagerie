@@ -29,25 +29,31 @@ main.produits {
     }
 }
 
-#epicerie,
+
+
 #charcuterie {
     .content-with-image {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: clamp(1rem, 2vw, 3rem);
-        //align-items: start;
-        align-items: center;
-
-        @include md {
-            grid-template-columns: 1fr 1fr;
+        @include sm {
+            p {
+                text-align: justify;
+            }
         }
-
         .image {
             position: relative;
             min-height: clamp(13.75rem, 11.989rem + 7.51vw, 18.75rem);
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 0.5rem;
+
+            @include sm {
+                float: right;
+                width: 50%;
+                top: 0;
+                margin-left: 1rem;
+                margin-bottom: 0;
+
+            }
 
             img {
                 object-fit: cover;

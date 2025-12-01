@@ -92,7 +92,7 @@ export default function ContactPage() {
           <MapContainer />
         </div>
       </section>
-      <section>
+{/*       <section>
         <div className="container">
           <h2>Nous écrire</h2>
           <p>
@@ -101,7 +101,7 @@ export default function ContactPage() {
             délai de réponse, données personnelles.
           </p>
         </div>
-      </section>
+      </section> */}
     </main>
   )
 }
