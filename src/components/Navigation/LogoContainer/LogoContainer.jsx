@@ -1,0 +1,20 @@
+import Image from 'next/image'
+import Link from 'next/link'
+
+export const LogoContainer = () => {
+  return (
+    <div className="logo-container">
+      <Link
+        href="/"
+        aria-label="Accueil"
+      >
+        <Image
+          src="/logo.png"
+          alt="logo"
+          width={77}
+          height={45}
+        />
+      </Link>
+    </div>
+  )
+}

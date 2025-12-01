@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import logo from '@/public/logo.svg'
 import { FeaturesSection } from '@/src/components/FeaturesSection/FeaturesSection'
 import { HeroVideo } from '@/src/components/HeroVideo/HeroVideo'
 import { ReviewSection } from '@/src/components/ReviewSection/ReviewSection'
@@ -27,7 +26,6 @@ export const metadata = {
 }
 
 export default function HomePage() {
-  //const Logo = svgToComponent(logo)
 
   return (
     <main className="home">

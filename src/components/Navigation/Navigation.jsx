@@ -1,11 +1,12 @@
 'use client'
 
+import { useState } from 'react'
 import Link from 'next/link'
+import { motion, useMotionValueEvent, useScroll } from 'motion/react'
 import { NavDesktop } from './NavDesktop/NavDesktop'
 import { NavMobile } from './NavMobile/NavMobile'
-import { motion, useScroll, useMotionValueEvent } from 'motion/react'
-import { useState } from 'react'
 import './Navigation.scss'
+import { LogoContainer } from './LogoContainer/LogoContainer'
 
 export const navLinks = [
   { href: '/', label: 'Accueil' },
@@ -32,12 +33,7 @@ export const Navigation = () => {
       transition={{ type: 'spring', stiffness: 140, damping: 18 }}
     >
       <nav>
-        <Link
-          href="/"
-          className="logo"
-        >
-          Fromagerie des Cimes
-        </Link>
+        <LogoContainer />
         <NavDesktop />
         <NavMobile />
       </nav>
