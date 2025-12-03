@@ -51,7 +51,7 @@ export default function PlateauxPage() {
               src="/images/plateau-de-fromages.webp"
               alt="fromagerie des cimes: notre histoire"
               fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 592px"
+              sizes="(max-width: 768px) 100vw, 50vw"
               priority
             />
           </div>
