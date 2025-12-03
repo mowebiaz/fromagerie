@@ -13,7 +13,8 @@
         }
             .image {
         position: relative;
-        min-height: clamp(13.75rem, 11.989rem + 7.51vw, 18.75rem);
+            min-height: clamp(13.75rem, 12.727rem + 2.841vw, 15rem);
+        height: 100%;
         border-radius: 10px;
         overflow: hidden;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);

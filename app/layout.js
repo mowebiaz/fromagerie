@@ -48,7 +48,7 @@ const layoutJsonLd = {
     'Fromagerie artisanale à Avoriaz : raclettes, fondues, plateaux, charcuteries et cave locale.',
   url: 'https://morganeweb.com/services/creation-site-vitrine/fromagerie',
   telephone: '04 50 74 00 00',
-  image: 'https://fromagerie.morganeweb.com/images/og/home.jpg',
+  image: 'https://fromagerie.morganeweb.com/images/og/fromagerie-des-cimes.jpg',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'xxx',

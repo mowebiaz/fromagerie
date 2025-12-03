@@ -139,7 +139,7 @@ export default function ProduitsPage() {
                   src="/images/saucisson.webp"
                   alt="de nombreux saucissons en présentation dans un panier d'osier"
                   fill
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 576px) 100vw, 50vw"
                 />
               </div>
               <p>
