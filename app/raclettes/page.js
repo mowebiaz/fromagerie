@@ -8,9 +8,6 @@ export const metadata = {
   title: 'Raclette à Avoriaz – Fromage & assortiments',
   description:
     'Raclettes nature, fumée, ail des ours, 3 poivres, chèvre… Pommes de terre, charcuteries, cornichons, pains et vins adaptés. Conseils & prêt d’appareil sur demande.',
-  alternates: {
-    canonical: 'https://morganeweb.com/',
-  },
   openGraph: {
     title: 'Fromagerie des Cimes: Raclette à Avoriaz',
     description:

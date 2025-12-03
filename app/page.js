@@ -12,9 +12,6 @@ import './page.scss'
 export const metadata = {
   description:
     'Fromagerie artisanale à Avoriaz : raclettes, fondues, plateaux, charcuteries et produits locaux.',
-  alternates: {
-    canonical: '/',
-  },
   openGraph: {
     title: 'Fromagerie à Avoriaz – Fromagerie des Cimes',
     description:
