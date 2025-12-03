@@ -5,18 +5,26 @@ import { playfair, raleway } from '@/src/styles/fonts'
 import '@/src/styles/scss/globals.scss'
 
 export const metadata = {
-  metadataBase: new URL('https://morganeweb.com/'),
+  metadataBase: new URL('https://fromagerie.morganeweb.com'),
   title: {
     default: 'Fromagerie des Cimes',
     template: '%s | Fromagerie des Cimes',
+  },
+  robots: {
+    index: false,
+    follow: true,
+    googleBot: {
+      index: false,
+      follow: true,
+      noimageindex: true,
+    },
   },
   description:
     'Fromagerie artisanale à Avoriaz : raclettes, fondues, plateaux sur-mesure, charcuteries, produits locaux et cave. Conseils d’accords, commande par téléphone & retrait en boutique.',
   openGraph: {
     siteName: 'Fromagerie des Cimes',
     type: 'website',
-    url: 'https://morganeweb.com/',
-    // mettre l'image par défaut
+    url: '/',
     images: [
       {
         url: '/images/og/fromagerie-des-cimes.jpg',
@@ -27,20 +35,20 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: '/',
+    canonical: 'https://morganeweb.com/services/creation-site-vitrine/fromagerie',
   },
 }
 
 const layoutJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FoodEstablishment',
-  '@id': '{{siteUrl}}/#fromagerie',
+  '@id': 'https://morganeweb.com/services/creation-site-vitrine/fromagerie#fromagerie',
   name: 'La Fromagerie des Cimes',
   description:
     'Fromagerie artisanale à Avoriaz : raclettes, fondues, plateaux, charcuteries et cave locale.',
-  url: '{{siteUrl}}/',
+  url: 'https://morganeweb.com/services/creation-site-vitrine/fromagerie',
   telephone: '04 50 74 00 00',
-  image: '{{siteUrl}}/images/og/home.jpg',
+  image: 'https://fromagerie.morganeweb.com/images/og/home.jpg',
   address: {
     '@type': 'PostalAddress',
     streetAddress: 'xxx',
@@ -86,6 +94,8 @@ const layoutJsonLd = {
     areaServed: 'FR',
     availableLanguage: ['fr'],
   },
+  priceRange: '€€',
+  servesCuisine: ['Fromages', 'Charcuterie', 'Produits locaux'],
   //"sameAs": ["{{instagram}}","{{facebook}}"]
 }
 

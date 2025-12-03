@@ -15,18 +15,15 @@ export const metadata = {
       'Adresse, horaires, téléphone et e-mail de la Fromagerie des Cimes à Avoriaz. Commande de plateaux, raclettes et fondues. Accès & plan.',
     url: '/contact',
   },
-  alternates: {
-    canonical: '/contact',
-  },
 }
 
 const contactJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
   name: 'Contact La Fromagerie des Cimes',
-  url: '{{siteUrl}}/contact',
+  url: 'https://fromagerie.morganeweb.com/contact',
   mainEntity: {
-    '@id': '{{siteUrl}}/contact',
+  '@id': 'https://morganeweb.com/services/creation-site-vitrine/fromagerie#fromagerie',
   },
 }
 

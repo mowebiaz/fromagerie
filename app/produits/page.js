@@ -26,18 +26,15 @@ export const metadata = {
       },
     ],
   },
-  alternates: {
-    canonical: '/produits',
-  },
 }
 
 const productsJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
-  url: '{{siteUrl}}/produits',
+  url: 'https://morganeweb.com/services/creation-site-vitrine/fromagerie',
   name: 'Nos produits – Fromagerie des Cimes',
   about: {
-    '@id': '{{siteUrl}}/#fromagerie',
+  '@id': 'https://morganeweb.com/services/creation-site-vitrine/fromagerie#fromagerie',
     '@type': 'FoodEstablishment',
     name: 'La Fromagerie des Cimes',
   },

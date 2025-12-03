@@ -23,9 +23,6 @@ export const metadata = {
       },
     ],
   },
-  alternates: {
-    canonical: '/fondues',
-  },
 }
 
 export default function FonduesPage() {

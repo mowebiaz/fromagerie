@@ -20,9 +20,6 @@ export const metadata = {
       },
     ],
   },
-  alternates: {
-    canonical: '/plateaux',
-  },
 }
 
 const plateauxJsonLd = {
@@ -34,11 +31,11 @@ const plateauxJsonLd = {
   serviceType: 'Plateaux de fromages et charcuteries',
   provider: {
     '@type': 'FoodEstablishment',
-    '@id': '{{siteUrl}}/#fromagerie',
+    '@id':
+      'https://morganeweb.com/services/creation-site-vitrine/fromagerie#fromagerie',
     name: 'La Fromagerie des Cimes',
   },
   areaServed: { '@type': 'Place', name: 'Avoriaz (74110)' },
-  url: '{{siteUrl}}/plateaux',
 }
 
 export default function PlateauxPage() {
