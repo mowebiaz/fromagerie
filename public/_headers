@@ -1,0 +1,28 @@
+# Ne pas mettre de gros cache sur les pages HTML
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Assets Next.js (hashés -> on peut les cacher longtemps)
+/_next/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Images "globales"
+/images/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/icons/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/leaflet/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Vidéos (hero, etc.) – cache long aussi
+/video/*
+  Cache-Control: public, max-age=31536000
+
+# Favicon & logo
+/favicon.ico
+  Cache-Control: public, max-age=31536000, immutable
+
+/logo.png
+  Cache-Control: public, max-age=31536000, immutable
