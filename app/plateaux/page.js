@@ -29,6 +29,7 @@ const plateauxJsonLd = {
   description:
     "'Préparation de plateaux de fromages et charcuteries pour l’apéro, les repas de famille ou les grandes tablées à Avoriaz.",
   serviceType: 'Plateaux de fromages et charcuteries',
+    url: 'https://morganeweb.com/services/creation-site-vitrine/fromagerie',
   provider: {
     '@type': 'FoodEstablishment',
     '@id':

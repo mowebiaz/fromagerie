@@ -21,7 +21,7 @@ const contactJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
   name: 'Contact La Fromagerie des Cimes',
-  url: 'https://fromagerie.morganeweb.com/contact',
+  url: 'https://morganeweb.com/services/creation-site-vitrine/fromagerie',
   mainEntity: {
   '@id': 'https://morganeweb.com/services/creation-site-vitrine/fromagerie#fromagerie',
   },

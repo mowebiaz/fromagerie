@@ -33,11 +33,8 @@ const productsJsonLd = {
   '@type': 'ItemList',
   url: 'https://morganeweb.com/services/creation-site-vitrine/fromagerie',
   name: 'Nos produits – Fromagerie des Cimes',
-  about: {
-  '@id': 'https://morganeweb.com/services/creation-site-vitrine/fromagerie#fromagerie',
-    '@type': 'FoodEstablishment',
-    name: 'La Fromagerie des Cimes',
-  },
+  '@id':
+    'https://morganeweb.com/services/creation-site-vitrine/fromagerie#fromagerie',
 
   itemListElement: [
     {
