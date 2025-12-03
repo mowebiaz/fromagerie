@@ -19,7 +19,7 @@ export const metadata = {
     url: '/produits',
     images: [
       {
-        url: '/images/og/produits.jpg', // à adapter
+        url: '/images/og/saucisson.jpg',
         width: 1200,
         height: 630,
         alt: 'Sélection de fromages et charcuteries à Avoriaz',
@@ -150,14 +150,12 @@ export default function ProduitsPage() {
               </div>
               <p>
                 La charcuterie est la complice idéale de nos fromages de Savoie.
-                Jambon cru, viande des Grisons, coppa, pancetta, rosette, sans
-                oublier nos saucissons nature, aux noix, au Beaufort, au poivre
-                ou aux herbes… De la planche apéro au sandwich pour le ski ou la
-                rando, en passant par la raclette et la fondue, vous trouverez
-                toujours de quoi composer un assortiment généreux, gourmand et
-                bien montagnard. Jambon cru de Savoie, viande des Grisons,
-                coppa, pancetta, rosette. saucissons… Saucissons : nature, noix,
-                Beaufort, poivre, herbes.
+                Jambon cru de Savoie, viande des Grisons, coppa, pancetta,
+                rosette, sans oublier nos saucissons nature, aux noix, au
+                Beaufort, au poivre ou aux herbes… De la planche apéro au
+                sandwich pour le ski ou la rando, en passant par la raclette et
+                la fondue, vous trouverez toujours de quoi composer un
+                assortiment généreux, gourmand et bien montagnard.
               </p>
             </div>
           </div>
