@@ -16,13 +16,12 @@ export const metadata = {
     description:
       'Raclettes nature, fumée, ail des ours, 3 poivres, chèvre… Pommes de terre, charcuteries, cornichons, pains et vins adaptés. Conseils & prête d’appareil sur demande.',
     url: '/raclettes',
-    // mettre l'image par défaut
     images: [
       {
         url: '/images/og/raclette.jpg',
         width: 1200,
         height: 630,
-        alt: 'Plateau de fromages et charcuteries à Avoriaz',
+        alt: 'Raclettes à Avoriaz',
       },
     ],
   },
@@ -57,7 +56,7 @@ export default function RaclettesPage() {
           </div>
           <div className="image">
             <Image
-              src="/images/1.png"
+              src="/images/fromages-a-raclette.webp"
               alt="fromages à raclette"
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
@@ -71,12 +70,14 @@ export default function RaclettesPage() {
         <div className="container">
           <h2>Nos formules</h2>
           <p>
-            Chaque raclette est offerte en plusieurs formules, selon vos
-            besoins. Chaque formule est personnalisable selon vos besoins. Par
-            personne : 200–250 g de fromage, 200–300 g de pommes de terre,
-            assortiment de charcuteries, cornichons. Sortez le fromage 30 min
-            avant. Prêt d’appareil possible (caution). à modifier: Présentation
-            sur Plateau ou juste découpé en sac, choisissez votre Formule !
+            Nos raclettes se déclinent en plusieurs formules, selon l’appétit et
+            l’occasion.
+            <br />
+            Présentation au choix : joliment dressée sur plateau prêt à servir,
+            ou simplement découpée et conditionnée en sachets. À vous de choisir
+            la formule qui vous convient ! Besoin d’une quantité spéciale pour
+            un grand chalet ? Passez nous voir en boutique ou appelez-nous: nous
+            adaptons chaque formule à vos envies.
           </p>
 
           <div className="formules">
@@ -100,7 +101,7 @@ export default function RaclettesPage() {
               </p>
             </FormulaCard>
 
-            <FormulaCard price="8,50">
+            <FormulaCard price="8,5">
               <ul>
                 <li>4 parfums de fromage</li>
                 <li>sans charcuterie</li>
@@ -108,7 +109,7 @@ export default function RaclettesPage() {
               <p className="info">(250g de fromage environ pp)</p>
             </FormulaCard>
 
-            <FormulaCard price="5,50">
+            <FormulaCard price="5,5">
               <ul>
                 <li>fromage nature</li>
                 <li>sans charcuterie</li>

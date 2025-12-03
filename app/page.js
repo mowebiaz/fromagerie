@@ -87,23 +87,23 @@ export default function HomePage() {
                 src={'/images/fromagerie-des-cimes-boutique.webp'}
                 alt="La fromagerie des Cimes: notre boutique au coeur d’Avoriaz"
                 fill
-                sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
               />
             </div>
             <div className="card">
               <Image
-                src={'/images/2.png'}
+                src={'/images/fromagerie-des-cimes.webp'}
                 alt="image1"
                 fill
-                sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
               />
             </div>
             <div className="card">
               <Image
-                src={'/images/3.png'}
-                alt="image1"
+                src={'/images/fromagerie-des-cimes-exterieur.webp'}
+                alt="La fromagerie des Cimes, vue de l'extérieur"
                 fill
-                sizes="(max-width: 576px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                sizes="(max-width: 576px) 100vw, (max-width: 992px) 50vw, 33vw"
               />
             </div>
             {/*             <div className='card-link'>

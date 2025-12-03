@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { FaqComponent } from '@/src/components/FaqComponent/FaqComponent'
 import { FormulaCard } from '@/src/components/FormulaCard/FormulaCard'
 import { faqFondues } from '@/src/data/faq'
@@ -13,6 +14,14 @@ export const metadata = {
     siteName: 'Fromagerie des Cimes',
     type: 'website',
     url: '/fondues',
+    images: [
+      {
+        url: '/images/og/fondue.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Fondues à Avoriaz',
+      },
+    ],
   },
   alternates: {
     canonical: '/fondues',
@@ -25,10 +34,12 @@ export default function FonduesPage() {
       <h1>Fondue savoyarde : nos mélanges prêts à fondre</h1>
       <div className="container">
         <p>
-          Nos fondues sont assemblées avec des fromages locaux : Beaufort,
-          Abondance et Emmental (ou Gruyère de Savoie) selon la saison et le
-          profil souhaité. Mélanges équilibrés, prêts à l’emploi. Nous
-          fournissons pain, ail, vin et conseils.
+          Chaque famille a sa fondue fétiche, et on le respecte ! Nos mélanges
+          sont préparés avec des fromages locaux (Beaufort, Abondance, Emmental
+          ou Gruyère de Savoie), râpés et prêts à l’emploi. Vous choisissez le
+          profil : plus doux, plus corsé, plus fruité… nous ajustons les
+          proportions pour vous. Pain, ail, vin blanc et conseils maison : on
+          s’occupe de tout, vous n’avez plus qu’à faire tourner le caquelon.
         </p>
       </div>
 
@@ -37,28 +48,31 @@ export default function FonduesPage() {
           <h2>Nos formules</h2>
           <div className="formules">
             <FormulaCard
-              title="la Classique"
-              price={10}
-            >
-              <p>Beaufort / Abondance / Emmental</p>
-            </FormulaCard>
-            <FormulaCard
               title="la Savoyarde"
-              price={10}
+              price={9}
             >
               <p>Beaufort / Abondance / Emmental</p>
             </FormulaCard>
+
             <FormulaCard
               title="la Suisse"
-              price={10}
+              price={'9,5'}
             >
-              <p>Beaufort / Abondance / Emmental</p>
+              <p>Gruyère suisse / Vacherin</p>
             </FormulaCard>
+
+            <FormulaCard
+              title="la Fribourgeoise"
+              price={'9,5'}
+            >
+              <p>Vacherin</p>
+            </FormulaCard>
+
             <FormulaCard
               title="l'Avoriazienne"
-              price={10}
+              price={9}
             >
-              <p>Beaufort / Abondance / Emmental</p>
+              <p>Beaufort / Abondance / Comté / Vacherin</p>
             </FormulaCard>
           </div>
         </div>
@@ -67,10 +81,21 @@ export default function FonduesPage() {
       <section>
         <div className="container">
           <h2>Conseils de préparation</h2>
-          <p>
-            200–250 g de fromage, 10–12 cl de vin blanc sec, ½ gousse d’ail,
-            pain rustique. Astuce : une pointe de muscade en fin de préparation.
-          </p>
+          <div className="igp">
+            <Image
+              src="/images/fromage-rape.webp"
+              alt="Préparation du fromage pour la fondue"
+              width={250}
+              height={167}
+            />
+            <p>
+              Prévoir 200 à 250 g de fromage par personne, 10–12 cl de vin blanc
+              sec, une demi gousse d’ail, et du pain rustique.
+              <br />
+              Astuce : vous pouvez ajouter une pointe de muscade en fin de
+              préparation.
+            </p>
+          </div>
         </div>
       </section>
       <section>

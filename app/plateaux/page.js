@@ -11,6 +11,14 @@ export const metadata = {
     title: 'Fromagerie des Cimes à Avoriaz',
     description: 'Plateaux prêts à partager : formats & exemples',
     url: '/plateaux',
+    images: [
+      {
+        url: '/images/og/plateaux.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Plateaux de fromages et charcuteries à Avoriaz',
+      },
+    ],
   },
   alternates: {
     canonical: '/plateaux',
@@ -50,10 +58,13 @@ export default function PlateauxPage() {
             />
           </div>
           <p>
-            Apéro de fin de journée, dîner cosy ou grande tablée : nous
-            composons des plateaux élégants avec nos fromages, charcuteries et
-            condiments. Formats au choix, options végétariennes, sans porc ou
-            100% fromages.
+            Apéritif entre amis, fin de repas gourmand ou grande tablée en
+            chalet : nous composons des plateaux sur mesure avec nos fromages,
+            charcuteries et accompagnements. Chaque plateau est préparé selon
+            vos envies : formats au choix, versions 100 % fromages ou avec
+            charcuterie. Pour un anniversaire, un week-end en famille ou un
+            événement particulier, n’hésitez pas à nous appeler : nous ajustons
+            les quantités et la présentation en fonction de votre occasion.
           </p>
         </div>
       </section>
@@ -61,42 +72,44 @@ export default function PlateauxPage() {
       <section>
         <div className="container">
           <h2>Formats & exemples</h2>
+          <p>
+            Les tarifs indiqués sont des tarifs par personne. Minimum 20€ de
+            commande.
+          </p>
           <div className="formules">
             <FormulaCard
-              price="15"
-              title="Apéro"
+              price="6"
+              title="Apéro fromage"
             >
-              <p className="info">2-4 pers</p>
-              <p>sélection de 4 fromages, charcuteries fines, fruits secs</p>
+              <p className="info">Découpé à la bouchée</p>
             </FormulaCard>
 
             <FormulaCard
-              price="25"
-              title="Convivial"
+              price="8,5"
+              title="Apéro fromage et charcuterie"
             >
-              <p className="info">4-6 pers</p>
-              <p>
-                sélection de 5-6 fromages, charcuteries de montagne, condiments
-              </p>
+              <p className="info">Découpé à la bouchée</p>
             </FormulaCard>
 
             <FormulaCard
-              price="40"
-              title="Gourmand"
+              price="11"
+              title="Repas fromage"
             >
-              <p className="info">6-8 pers</p>
-              <p>
-                sélection de 7-8 fromages, grands affinages, charcuteries,
-                confitures
-              </p>
+              <p className="info">Pour ceux qui ne veulent pas cuisiner</p>
             </FormulaCard>
 
             <FormulaCard
-              price="60"
-              title="Sur mesure"
+              price="14"
+              title="Repas fromage et charcuterie"
             >
-              <p className="info">8-12 pers</p>
-              <p>thèmes (Savoie only, chèvres, truffe…), allergies, budget</p>
+              <p className="info">Pour ceux qui ne veulent pas cuisiner</p>
+            </FormulaCard>
+
+            <FormulaCard
+              price="5"
+              title="Fin de repas"
+            >
+              <p className="info">avant de passer au dessert...</p>
             </FormulaCard>
           </div>
         </div>

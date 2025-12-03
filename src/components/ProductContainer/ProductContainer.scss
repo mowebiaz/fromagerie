@@ -10,7 +10,7 @@
     grid-gap: var(--g);
     /* adapts automatically for the number of items */
     grid-template-columns: 
-		/* twice the number of img columns*/ repeat(6, 1fr);
+		/* twice the number of img columns*/ repeat(4, 1fr);
     /* to hide what overflows of the last image */
     overflow: hidden;
     /* guess gap on body works too */
@@ -21,7 +21,7 @@
 
     &__content {
         /* text section takes up half the columns */
-        grid-column-end: span 3;
+        grid-column-end: span 2;
         /* needed for its pseudo */
         position: relative;
         /* so its pseudo is above parent backdrop */
@@ -60,6 +60,10 @@
             border-radius: 5px;
             border: 2px solid $secondary; */
             @include note;
+        }
+
+        a {
+            @include link-router;
         }
     }
 

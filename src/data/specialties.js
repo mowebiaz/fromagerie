@@ -3,8 +3,7 @@ export const specialties = [
     id: '1',
     size: 'wide',
     title: 'La raclette',
-    content:
-      'nature, fumée, ail des ours, 3 poivres, chèvre… et tout l’accompagnement : pommes de terre, charcuteries, cornichons, pain, vins blancs de montagne.',
+    content: "Fromages de montagne fondants (nature, fumée, ail des ours, chèvre…), servis avec pommes de terre, charcuteries et condiments pour des soirées conviviales en station.",
     image: { src: '/images/raclette.webp', alt: 'fromage à raclette fondu coulant dans une assiette' },
     link: { ref: '/raclettes', text: 'Voir nos raclettes' },
   },
@@ -12,7 +11,7 @@ export const specialties = [
     id: '2',
     size: 'wide',
     title: 'La fondue',
-    content: 'recettes maison (Beaufort, Abondance, Emmental…)',
+    content: "Mélanges maison de Beaufort, Abondance et Emmental, prêts à faire fondre au caquelon, avec pain, vin blanc et conseils pour réussir vos soirées fondue en altitude.",
     image: { src: '/images/fondue.webp', alt: 'fondue au fromage accompagnée de charcuterie et de pain' },
     link: { ref: '/fondues', text: 'Voir nos fondues' },
   },
@@ -21,7 +20,7 @@ export const specialties = [
     size: 'medium',
     title: 'Abondance AOP',
     content:
-      'Texture souple et arômes fruités/typiquement “noisette”. Affinage en cave sur planches d’épicéa qui lui donne sa belle longueur en bouche.',
+      'Texture souple et arômes fruités, belle longueur en bouche. Affinage en cave sur planches d’épicéa.',
     image: { src: '/images/fromage-abondance.webp', alt: 'tranche de fromage abondance sur une ardoise' },
   },
   {
