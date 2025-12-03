@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image from 'next-export-optimize-images/image'
 import { FaqComponent } from '@/src/components/FaqComponent/FaqComponent'
 import { FormulaCard } from '@/src/components/FormulaCard/FormulaCard'
 import { faqFondues } from '@/src/data/faq'
@@ -27,7 +27,7 @@ export const metadata = {
 
 export default function FonduesPage() {
   return (
-    <main>
+    <main id='fondues'>
       <h1>Fondue savoyarde : nos mélanges prêts à fondre</h1>
       <div className="container">
         <p>
@@ -78,7 +78,7 @@ export default function FonduesPage() {
       <section>
         <div className="container">
           <h2>Conseils de préparation</h2>
-          <div className="igp">
+          <div className="recipe">
             <Image
               src="/images/fromage-rape.webp"
               alt="Préparation du fromage pour la fondue"
@@ -95,6 +95,7 @@ export default function FonduesPage() {
           </div>
         </div>
       </section>
+
       <section>
         <div className="container">
           <FaqComponent
