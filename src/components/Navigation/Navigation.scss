@@ -4,7 +4,7 @@
 header {
     position: fixed;
     top: 0;
-    z-index: 999;
+    z-index: 10000; //because of leaflet map
     height: 57px;
     width: 100%;
     display: flex;
@@ -22,13 +22,13 @@ nav {
     align-items: center;
     width: 100%;
     max-width: $container-max-width;
-    justify-content:space-between;
+    justify-content: space-between;
     position: relative;
     padding: 0 0.5rem;
-    margin: 0 auto;  
-     @include lg {
+    margin: 0 auto;
+    @include lg {
         padding: 0 2rem;
-    } 
+    }
 
     ul {
         list-style-type: none;
