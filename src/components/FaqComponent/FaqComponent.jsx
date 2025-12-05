@@ -16,8 +16,8 @@ export const FaqComponent = ({ className, items, ...props }) => (
       <Disclosure key={item.id} >
         <Heading>
           <Button slot="trigger">
-            <FaCircleChevronRight size={30}/>
-            {item.question}
+            <FaCircleChevronRight/>
+            <span className='faq-question'>{item.question}</span>
           </Button>
         </Heading>
         <DisclosurePanel>{item.answer}</DisclosurePanel>

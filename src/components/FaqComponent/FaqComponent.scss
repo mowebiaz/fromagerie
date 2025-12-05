@@ -14,34 +14,18 @@
     }
 
     .react-aria-Button[slot='trigger'] {
-        /*     background: none;
-    border: none;
-    box-shadow: none;
-    font-weight: bold;
-    font-size: 16px;
-    display: flex;
-    //align-items: first baseline;
-    gap: 8px;
-    padding: 8px 0; */
         display: flex;
-        align-items: center;
         width: 100%;
-        //border: 1px solid $primary;
         background: none;
         gap: 8px;
 
-        &:last-child {
-            text-align: left;
-            font-size: clamp(1.2rem, 1.171rem + 0.123vw, 1.25rem);
-            font-weight: 500;
-        }
-
         svg {
+            width: 25px;
+            height: 25px;
+            flex-shrink: 0;
             rotate: 0deg;
             transition: rotate 200ms;
             fill: $primary;
-            //stroke: currentColor;
-            stroke-width: 3px;
         }
     }
 
@@ -50,9 +34,16 @@
     }
 }
 
+.faq-question {
+    text-align: left;
+    font-size: clamp(1.2rem, 1.171rem + 0.123vw, 1.25rem);
+    font-weight: 450;
+    line-height: 1.2; // ou plus petit en mobile
+    align-self: center;
+}
+
 .react-aria-DisclosurePanel {
-    margin-left: 26px;
-    height: var(--disclosure-panel-height);
+    margin-left: 33px;
     transition: height 250ms;
     text-align: left;
     overflow: clip;
