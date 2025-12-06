@@ -18,10 +18,12 @@ export const products = [
     ),
     accent: null,
     images: [
-      { src: '/images/pate-pressee-1.webp', alt: 'Fromage à pâte pressée' },
+      { src: '/images/pate-pressee-1.webp', alt: 'Fromage à pâte pressée', width: 400, height:282 },
       {
         src: '/images/pate-pressee-3.webp',
         alt: 'meule de Savoie, fromage de montagne',
+        width: 400,
+        height: 300,
       },
     ],
   },
@@ -43,8 +45,10 @@ export const products = [
       {
         src: '/images/brie.webp',
         alt: 'Brie fourré aux truffes, fromage crémeux',
+        width: 400,
+        height: 300,
       },
-      { src: '/images/vacherin-de-savoie.webp', alt: 'vacherin de savoie' },
+      { src: '/images/vacherin-de-savoie.webp', alt: 'vacherin de savoie', width: 397, height: 298 },
     ],
   },
   {
@@ -63,8 +67,8 @@ export const products = [
     ),
     accent: '❤️ Notre Coup de cœur : chèvre à l’ail des ours',
     images: [
-      { src: '/images/fromage-de-chevre.webp', alt: 'Fromage de chèvre' },
-      { src: '/images/chevrotin-des-aravis.webp', alt: 'chevrotin des aravis' },
+      { src: '/images/fromage-de-chevre.webp', alt: 'Fromage de chèvre', width: 626, height: 300 },
+      { src: '/images/chevrotin-des-aravis.webp', alt: 'chevrotin des aravis', width: 400, height: 328 },
     ],
   },
 ]

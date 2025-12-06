@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import './ProductContainer.scss'
 
 export const ProductContainer = ({
@@ -19,7 +20,10 @@ export const ProductContainer = ({
           <img
             src={image.src}
             alt={image.alt}
-            width={image.width}
+            loading="lazy"
+            decoding="async"
+            //width={image.width}
+            //height={image.height}
           />
         </figure>
       ))}

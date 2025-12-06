@@ -59,7 +59,6 @@ export default function HomePage() {
               alt="cuillère en bois contenant du fromage fondu"
               fill
               sizes="(max-width: 768px) 100vw, 35vw"
-              priority
             />
           </div>
         </div>
