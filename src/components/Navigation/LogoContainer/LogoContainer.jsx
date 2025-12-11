@@ -13,6 +13,7 @@ export const LogoContainer = () => {
           alt="logo"
           width={77}
           height={45}
+          priority
         />
       </Link>
     </div>
