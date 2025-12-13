@@ -54,12 +54,13 @@ export function Footer() {
         <div className="footer__copyright">
           <p>© 2025 Fromagerie des Cimes. Tous droits réservés.</p>
           <p>
-            Site réalisé par
+            Site réalisé par{' '}
             <LinkAria
               href={'https://morganeweb.com/'}
               target="_blank"
               referrerPolicy="no-opener no-referrer"
-              className="link"
+              aria-label="Lien vers le site de MorganeWeb"
+              className="footer-link"
             >
               MorganeWeb
             </LinkAria>
@@ -68,7 +69,7 @@ export function Footer() {
         <div className="footer__links">
           <LinkAria
             href={'/mentions-legales'}
-            className="link"
+            className="footer-link"
           >
             Mentions légales
           </LinkAria>

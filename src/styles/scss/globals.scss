@@ -41,8 +41,6 @@ body {
 main {
     flex: 1 0 auto;
     margin-top: 57px;
-    /*display: flex;
-    flex-direction: column;*/
 }
 
 .container {
@@ -54,7 +52,6 @@ main {
     }
     @media screen and (min-width: $container-max-width) {
         padding: 2rem;
-        
     }
 }
 
@@ -96,8 +93,8 @@ p {
 }
 
 h1 {
-    font-family: var(--font-playfair), 'Brush Script MT', 'Comic Sans MS',
-        cursive;
+    font-family:
+        var(--font-playfair), 'Brush Script MT', 'Comic Sans MS', cursive;
     text-align: center;
     font-size: clamp(1.6rem, 1.369rem + 0.985vw, 2rem);
     text-wrap: balance;
@@ -105,15 +102,10 @@ h1 {
 }
 
 h2 {
-        font-family: var(--font-playfair), 'Brush Script MT', 'Comic Sans MS',
-        cursive;
+    font-family:
+        var(--font-playfair), 'Brush Script MT', 'Comic Sans MS', cursive;
     font-size: clamp(1.3rem, 1.127rem + 0.739vw, 1.6rem);
-    //color: hsla(0, 0%, 20%, 1);
-    //margin-top: 1rem;
-    //width: max-content;
     margin-bottom: clamp(1.3rem, 1.127rem + 0.739vw, 1.6rem);
-/*     position: relative;
-    width: fit-content; */
     &::after {
         content: '';
         position: absolute;
@@ -121,8 +113,6 @@ h2 {
         width: 80px;
         height: 3px;
         margin: 0.3rem 0;
-/*         left: 50%;
-        transform: translateX(-50%); */
         background-color: $primary;
     }
 }
@@ -130,7 +120,10 @@ h2 {
 h3 {
     font-size: clamp(1.25rem, 1.106rem + 0.616vw, 1.5rem);
     //color: hsla(0, 0%, 20%, 1);
-    //margin-top: 0.5rem;
+}
+
+.stronger {
+    font-weight: 500;
 }
 
 sr-only {
@@ -152,7 +145,3 @@ sr-only {
     scroll-behavior: auto !important;
   }
 }*/
-
-
-
-
