@@ -15,6 +15,7 @@
 .hero-video {
     &__container {
         position: absolute;
+        background: url('/video/poster-video.webp') center/cover no-repeat;
         top: 0;
         left: 0;
         width: 100%;
