@@ -4,7 +4,7 @@ export const ContactCard = ({ title, content, Icon }) => {
   return (
     <article className="contact-card">
       <div className="contact-card__icon">
-        <Icon size={18} />
+        <Icon size={15} />
       </div>
       <div className="contact-card__content">
         <h3>{title}</h3>

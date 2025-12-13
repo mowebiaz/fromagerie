@@ -2,8 +2,8 @@
 @use '@/src/styles/scss/variables' as *;
 
 #plateaux {
-  .container {
-              display: grid;
+    .container {
+        display: grid;
         grid-template-columns: 1fr;
         gap: clamp(1rem, 2vw, 3rem);
         align-items: start;
@@ -11,18 +11,21 @@
         @include md {
             grid-template-columns: 1fr 1fr;
         }
-            .image {
-        position: relative;
+        .image {
+            position: relative;
             min-height: clamp(13.75rem, 12.727rem + 2.841vw, 15rem);
-        height: 100%;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+            height: 100%;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 
-        img {
-            object-fit: cover;
+            img {
+                object-fit: cover;
+            }
         }
     }
-  }
 }
 
+#formules-plateaux {
+    background-color: $cream;
+}

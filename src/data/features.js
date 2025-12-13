@@ -6,7 +6,7 @@ export const features = [
   {
     id: '1',
     title: 'Qualité premium',
-    content: 'Fromges sélectionnés avec soin auprès des meilleurs producteurs',
+    content: 'Fromages sélectionnés avec soin auprès des meilleurs producteurs',
     Icon: FaAward,
   },
   {

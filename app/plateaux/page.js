@@ -67,7 +67,7 @@ export default function PlateauxPage() {
         </div>
       </section>
 
-      <section>
+      <section id='formules-plateaux'>
         <div className="container">
           <h2>Formats & exemples</h2>
           <p>
