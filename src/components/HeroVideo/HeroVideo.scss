@@ -3,6 +3,7 @@
 @use 'sass:color';
 
 .hero {
+    position: relative;
     height: calc(100vh - 57px);
     top: 0;
     display: flex;
@@ -62,6 +63,9 @@
         font-weight: 500;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
         width: 100%;
+//backdrop-filter: blur(10px);
+
+        //background-color: red;
         //max-width: 600px;
         //margin: 0 auto 1rem;
         margin-bottom: 9vh;
@@ -82,15 +86,19 @@
             @include btn;
             //padding: 1rem 2rem;
             padding: 0.5rem 1rem;
-            color: $cream;
-            background-color: $primary;
-            border: 2px solid $primary;
+            //color: $cream;
+            //background-color: $primary;
+            background-color: $cream;
+            color: $primary;
+            font-weight: 700;
+            border: 2px solid $cream;
             transition: all 0.2s ease-in-out;
 
             &:hover {
-                background-color: color.scale($primary, $alpha: -55%);
-                color: white;
-                font-weight: 700;
+                background-color: color.scale($cream, $alpha: -55%);
+                border: 2px solid $primary;
+                color: $primary;
+                //font-weight: 700;
                 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
                 box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
                 transform: translateY(-2px);
@@ -99,17 +107,16 @@
 
         .btn--secondary {
             @include btn;
-            //padding: 1rem 2rem;
             padding: 0.5rem 1rem;
             color: $cream;
-            background-color: $secondary;
-            border: 2px solid $secondary;
+            background-color: $primary;
+            border: 2px solid $primary;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
             transition: all 0.2s ease-in-out;
 
             &:hover {
-                background-color: color.scale($secondary, $alpha: -55%);
-                font-weight: 700;
+                background-color: color.scale($primary, $alpha: -55%);
+                //font-weight: 700;
                 color: white;
                 text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
                 box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);

@@ -14,7 +14,7 @@ export const HeroVideo = () => {
           loop
           playsInline
           className="hero-video__video"
-          /*poster="https://images.pexels.com/photos/4198021/pexels-photo-4198021.jpeg"*/
+          poster="/video/poster-video.webp"
         >
           <source
             src="video/fromages-video.mp4"
