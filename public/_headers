@@ -1,10 +1,16 @@
 # Ne pas mettre de gros cache sur les pages HTML
-/*.html
+/*
   Cache-Control: public, max-age=0, must-revalidate
 
 # Assets Next.js (hashés -> on peut les cacher longtemps)
-/_next/*
+/_next/static/*
   Cache-Control: public, max-age=31536000, immutable
+
+/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  Cache-Control: public, max-age=31536000, immutable  
 
 # Images "globales"
 /images/*
