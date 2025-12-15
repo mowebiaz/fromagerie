@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from 'react'
 import L from 'leaflet'
+import 'leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility.css'
+import 'leaflet/dist/leaflet.css'
 
 export default function Map() {
   const containerRef = useRef(null)
