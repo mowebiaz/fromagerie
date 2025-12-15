@@ -26,17 +26,17 @@ export const Navigation = () => {
   })
 
   return (
-    <motion.header
-      className={isScrolled ? 'scrolled' : ''}
+    <header
+/*       className={isScrolled ? 'scrolled' : ''}
       initial={{ y: -40, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
-      transition={{ type: 'spring', stiffness: 140, damping: 18 }}
+      transition={{ type: 'spring', stiffness: 140, damping: 18 }} */
     >
       <nav>
         <LogoContainer />
         <NavDesktop />
         <NavMobile />
       </nav>
-    </motion.header>
+    </header>
   )
 }

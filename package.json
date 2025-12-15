@@ -15,7 +15,6 @@
     "leaflet-defaulticon-compatibility": "^0.1.2",
     "motion": "^12.23.12",
     "next": "^15.5.2",
-    "next-export-optimize-images": "^4.7.0",
     "react": "^19.0.0",
     "react-aria-components": "^1.13.0",
     "react-dom": "^19.0.0",
@@ -26,6 +25,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "eslint": "^9",
-    "eslint-config-next": "15.3.2"
+    "eslint-config-next": "15.3.2",
+    "next-export-optimize-images": "^4.7.0"
   }
 }
