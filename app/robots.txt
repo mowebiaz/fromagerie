@@ -1,3 +1,4 @@
-userAgent: '*',
-disallow: '/',
+User-agent: *
+Disallow: /
+
 
