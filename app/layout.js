@@ -35,14 +35,16 @@ export const metadata = {
     ],
   },
   alternates: {
-    canonical: 'https://morganeweb.com/services/creation-site-vitrine/fromagerie',
+    canonical:
+      'https://morganeweb.com/services/creation-site-vitrine/fromagerie',
   },
 }
 
 const layoutJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'FoodEstablishment',
-  '@id': 'https://morganeweb.com/services/creation-site-vitrine/fromagerie#fromagerie',
+  '@id':
+    'https://morganeweb.com/services/creation-site-vitrine/fromagerie#fromagerie',
   name: 'La Fromagerie des Cimes',
   description:
     'Fromagerie artisanale à Avoriaz : raclettes, fondues, plateaux, charcuteries et cave locale.',
@@ -103,10 +105,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className={`${playfair.variable} ${raleway.variable}`}>
-        {/*         <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-        /> */}
         <JsonLd schema={layoutJsonLd} />
         <Navigation />
         {children}
