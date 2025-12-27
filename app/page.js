@@ -3,13 +3,16 @@ import { HomeContent } from '@/src/components/HomeContent/HomeContent'
 import './page.scss'
 
 export const metadata = {
-  description:
-    'Fromagerie artisanale à Avoriaz : raclettes, fondues, plateaux, charcuteries et produits locaux.',
   openGraph: {
-    title: 'Fromagerie à Avoriaz – Fromagerie des Cimes',
-    description:
-      'Fromages savoyards, raclettes, fondues et plateaux prêts à partager à Avoriaz.',
     url: '/', // devient https://fromageriedescimes.fr/ via metadataBase
+    images: [
+      {
+        url: '/images/og/fromagerie-des-cimes.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Plateau de fromages et charcuteries à Avoriaz',
+      },
+    ],
   },
 }
 

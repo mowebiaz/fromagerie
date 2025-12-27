@@ -14,6 +14,14 @@ export const metadata = {
     description:
       'Adresse, horaires, téléphone et e-mail de la Fromagerie des Cimes à Avoriaz. Commande de plateaux, raclettes et fondues. Accès & plan.',
     url: '/contact',
+        images: [
+      {
+        url: '/images/og/fromagerie-des-cimes.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Plateau de fromages et charcuteries à Avoriaz',
+      },
+    ],
   },
 }
 
