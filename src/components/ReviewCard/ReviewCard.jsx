@@ -11,13 +11,13 @@ export const ReviewCard = ({ review }) => {
           </div>
         </div>
 
-        <p
-          className="review__rating"
-          aria-label={`${review.rating} étoiles sur 5`}
-        >
-          {'★'.repeat(review.rating)}
-          {'☆'.repeat(5 - review.rating)}
-        </p>
+        <span className="review__rating">
+          <span className="sr-only">{`${review.rating} étoiles sur 5`}</span>
+          <span aria-hidden="true">
+            {'★'.repeat(review.rating)}
+            {'☆'.repeat(5 - review.rating)}
+          </span>
+        </span>
       </div>
 
       <p className="review__text">{review.text}</p>

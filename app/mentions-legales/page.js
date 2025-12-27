@@ -45,7 +45,7 @@ export default function MentionsLegales() {
           <LinkAria
             href={'https://www.cloudflare.com/fr-fr/'}
             target="_blank"
-            referrerPolicy="no-opener no-referrer"
+            rel="no-opener no-referrer"
             className="link"
           >
             https://www.cloudflare.com/fr-fr
@@ -101,7 +101,7 @@ export default function MentionsLegales() {
                 'https://commons.wikimedia.org/wiki/File:Vache_Abondance_en_alpage.jpg'
               }
               target="_blank"
-              referrerPolicy="no-opener no-referrer"
+              rel="no-opener no-referrer"
               className="link"
             >
               Vache abondance
@@ -112,7 +112,7 @@ export default function MentionsLegales() {
                 'https://commons.wikimedia.org/wiki/File:Abondance_(fromage)_01.jpg'
               }
               target="_blank"
-              referrerPolicy="no-opener no-referrer"
+              rel="no-opener no-referrer"
               className="link"
             >
               fromage d&apos;abondance
@@ -123,7 +123,7 @@ export default function MentionsLegales() {
                 'https://commons.wikimedia.org/wiki/File:WikiCheese_-_Tomme_de_Savoie_-_20150619_-_002.jpg'
               }
               target="_blank"
-              referrerPolicy="no-opener no-referrer"
+              rel="no-opener no-referrer"
               className="link"
             >
               tomme de Savoie
@@ -132,7 +132,7 @@ export default function MentionsLegales() {
             <LinkAria
               href={'https://commons.wikimedia.org/wiki/File:Reblochon_11.jpg'}
               target="_blank"
-              referrerPolicy="no-opener no-referrer"
+              rel="no-opener no-referrer"
               className="link"
             >
               reblochon
@@ -143,7 +143,7 @@ export default function MentionsLegales() {
                 'https://commons.wikimedia.org/wiki/File:Vacherin_des_bauges.jpg'
               }
               target="_blank"
-              referrerPolicy="no-opener no-referrer"
+              rel="no-opener no-referrer"
               className="link"
             >
               vacherin
@@ -154,7 +154,7 @@ export default function MentionsLegales() {
                 'https://commons.wikimedia.org/wiki/File:Chevrotin_des_Aravis_(avril_2021)_-_2.jpg'
               }
               target="_blank"
-              referrerPolicy="no-opener no-referrer"
+              rel="no-opener no-referrer"
               className="link"
             >
               chevrotin

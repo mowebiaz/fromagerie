@@ -71,7 +71,7 @@ export default function ContactPage() {
             className="link"
             href={'https://www.village-des-enfants.com/fr/'}
             target="_blank"
-            referrerPolicy="no-opener no-referrer"
+            rel="no-opener no-referrer"
           >
             village des enfants
           </LinkAria>

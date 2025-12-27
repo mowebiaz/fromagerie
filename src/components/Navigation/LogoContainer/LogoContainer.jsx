@@ -10,10 +10,11 @@ export const LogoContainer = () => {
       >
         <Image
           src="/logo.png"
-          alt="logo"
+          alt=""
           width={77}
           height={45}
           priority
+          aria-hidden="true"
         />
       </Link>
     </div>

@@ -14,19 +14,22 @@ export const HeroVideo = () => {
           loop
           playsInline
           className="hero-video__video"
+          preload="metadata"
           poster="/video/poster-video.webp"
         >
+          <source src="/video/fromages-video-sd.mp4" type="video/mp4" media="(max-width: 768px)" />
           <source
-            src="video/fromages-video.mp4"
+            src="/video/fromages-video.mp4"
             type="video/mp4"
           />
+
           Votre navigateur ne supporte pas la balise <code>video</code>.
         </video>
         <div className="hero-video__overlay"></div>
       </div>
       <div className="hero__content">
         <motion.div
-          initial={{ opacity: 0, y: 50 }}
+          initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2}}
         >
@@ -34,7 +37,11 @@ export const HeroVideo = () => {
           <h2>
             Fromages et spécialités savoyardes à Avoriaz
           </h2>
-          <div className="cta">
+          <motion.div className="cta"
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.4}}
+          >
             <Link
               href="/produits"
               className="btn--primary"
@@ -47,14 +54,14 @@ export const HeroVideo = () => {
             >
               Nous rendre visite
             </Link>
-          </div>
+          </motion.div>
         </motion.div>
         <motion.a
           href="#about"
           className="scroll"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1}}
-          transition={{ duration: 0.8, delay: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.5 }}
         >
           <span className="scroll__text">Découvrir</span>
           <span className="scroll__icon"></span>

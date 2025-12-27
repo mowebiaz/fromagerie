@@ -31,7 +31,7 @@ export function Footer() {
             <LinkAria
               href={'/'}
               target="_blank"
-              referrerPolicy="no-opener no-referrer"
+              rel="no-opener no-referrer"
               aria-label="Lien vers le profil instagram"
               className="social-link"
             >
@@ -41,7 +41,7 @@ export function Footer() {
             <LinkAria
               href={'/'}
               target="_blank"
-              referrerPolicy="no-opener no-referrer"
+              rel="no-opener no-referrer"
               aria-label="Lien vers le profil Facebook"
               className="social-link"
             >
@@ -52,13 +52,13 @@ export function Footer() {
       </div>
       <div className="footer__bottom">
         <div className="footer__copyright">
-          <p>© 2025 Fromagerie des Cimes. Tous droits réservés.</p>
+          <p>© 2025 Fromagerie des Cimes. Tous droits réservés</p>
           <p>
             Site réalisé par{' '}
             <LinkAria
               href={'https://morganeweb.com/'}
               target="_blank"
-              referrerPolicy="no-opener no-referrer"
+              rel="no-opener no-referrer"
               aria-label="Lien vers le site de MorganeWeb"
               className="footer-link"
             >
