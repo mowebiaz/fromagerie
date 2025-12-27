@@ -1,6 +1,5 @@
 @use '@/src/styles/scss/variables' as *;
 @use '@/src/styles/scss/mixins' as *;
-@use 'sass:color';
 
 #about {
     scroll-margin-top: 57px;
@@ -50,9 +49,19 @@
         border-radius: 10px;
         box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
         overflow: hidden;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+            transform: translateY(-2px);
+            img {
+                transform: scale(1.1);
+            }
+        }
 
         img {
             object-fit: cover;
+            transition: transform 0.5s ease;
         }
     }
     .card-link {

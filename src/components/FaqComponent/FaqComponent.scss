@@ -24,8 +24,9 @@
             height: 25px;
             flex-shrink: 0;
             rotate: 0deg;
-            transition: rotate 200ms;
             fill: $primary;
+            cursor: pointer;
+            transition: rotate 200ms;
         }
     }
 
@@ -44,11 +45,20 @@
 
 .react-aria-DisclosurePanel {
     margin-left: 33px;
-    transition: height 250ms;
     text-align: left;
     overflow: clip;
+    height: 0;
+    opacity: 0;
+     transform: translateY(-4px);
+    transition: all 250ms;
 
     @media (prefers-reduced-motion: reduce) {
         transition: none;
     }
+}
+
+.react-aria-Disclosure[data-expanded] .react-aria-DisclosurePanel {
+    height: auto;
+    opacity: 1;
+    transform: translateY(0);
 }

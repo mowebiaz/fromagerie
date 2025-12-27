@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import './ProductContainer.scss'
 
 export const ProductContainer = ({

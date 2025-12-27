@@ -1,7 +1,3 @@
-'use client'
-
-import { useRef } from 'react'
-import { motion, useInView, useReducedMotion } from 'motion/react'
 import Image from 'next-export-optimize-images/image'
 import { BtnLink } from '@/src/components/BtnLink/BtnLink'
 import { FeaturesSection } from '@/src/components/FeaturesSection/FeaturesSection'
@@ -12,10 +8,6 @@ import { reviews } from '@/src/data/reviews'
 import { specialties } from '@/src/data/specialties'
 
 export const HomeContent = () => {
-  const ref = useRef(null)
-  const isInView = useInView(ref, { margin: '-10% 0px -10% 0px', once: true })
-  const reduce = useReducedMotion()
-
   return (
     <>
       <section id="about">
@@ -30,15 +22,7 @@ export const HomeContent = () => {
         </div>
       </section>
 
-      <motion.section
-        id="histoire"
-        ref={ref}
-        initial={reduce ? { opacity: 1 } : { opacity: 0, y: 12 }}
-        animate={
-          isInView ? (reduce ? { opacity: 1 } : { opacity: 1, y: 0 }) : {}
-        }
-        transition={reduce ? {} : { duration: 0.45, ease: [0.16, 1, 0.3, 1] }}
-      >
+      <section id="histoire">
         <div className="container">
           <div className="histoire__content">
             <h2>Notre histoire</h2>
@@ -63,7 +47,7 @@ export const HomeContent = () => {
             />
           </div>
         </div>
-      </motion.section>
+      </section>
 
       <SpecialtySection items={specialties} />
 
